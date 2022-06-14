@@ -31,16 +31,15 @@ const int ground_truth_num_landmarks = 3;
 const int max_num_landmarks = 6;
 const int num_poses = 6;
 
-static Symbol x0('x',0), x1('x', 1), x2('x', 2), x3('x', 3), x4('x', 4), x5('x', 5);
-static Symbol l1('l', 1), l2('l', 2), l3('l', 3), l4('l', 4), l5('l',5), l6('l',6);
-
 static Point3 ground_truth_poses[num_poses] = {Vector3(0.0, 0.0, 0.0), Vector3(1.0, 1.0, 0.0), Vector3(2.0, 2.0, 0.0), Vector3(3.0, 3.0, 0.0), Vector3(4.0, 4.0, 0.0), Vector3(5.0, 5.0, 0.0)};
 
 Point3 ground_truth_landmarks[ground_truth_num_landmarks] = {Vector3(2.0,0.0,0.0), Vector3(2.0,3.0,0.0), Vector3(3.0,5.0,0.0)};
 
-static Symbol poses[num_poses] = {x0, x1, x2, x3, x4, x5};
+Pose2 initial_estimate_poses[6] = {Pose2(3.07, 2.49, 0.73), Pose2(1.58, 4.3, 2.72), Pose2(0.44, 3.78, -2.05319), Pose2(2.09, 4.4, 1.65), Pose2(4.92, 0.42, -1.41319), Pose2(0.03, 3.27, 2.29)};
+  
+Point2 initial_estimate_landmarks[3] = {Point2(3.4, 1.12), Point2(3.03, 1.69), Point2(2.09, 1.57)};
 
-static Symbol landmarks[max_num_landmarks] = {l1, l2, l3, l4, l5, l6};
+NonlinearFactorGraph graph;
 
 static Vector3 odometry(1.0, 1.0, 0.0);
 
@@ -58,6 +57,11 @@ static double P_F = 0.01;
 //time counter for the persistence filter
 double t = 1.0;
 
+int passes = 0;
+
+std::uniform_real_distribution<double> distribution(0.0, 5.0);
+static std::default_random_engine generator(time(0));
+
 std::function<double(double)> logS_T = std::bind(log_general_purpose_survival_function, std::placeholders::_1, lambda_l, lambda_u);
 
 //Array of persistence filters for the number of landmarks
@@ -65,13 +69,17 @@ PersistenceFilter landmark_filters[max_num_landmarks] = {PersistenceFilter(logS_
 //Map with feature locations as keys and symbol indices as values
 map<int, Vector3> index_to_feature_map;
 //stores current symbol_index
-int current_landmark_index = ground_truth_num_landmarks;
+int current_landmark_number = ground_truth_num_landmarks;
 int current_pose_index = 0;
+
+double h(Vector3 v){
+  /*This method hashes a vector to use it as a key in the map*/
+  return v.x()+v.y()+v.z();
+}
 
 //This method adds noise to the provided measurement to mimic a real life measurement with noisy equipment
 double add_noise(double stddev, double measurement){
     double mean = 0.0;
-    std::default_random_engine generator;
     std::normal_distribution<double> dist(mean, stddev);
 
     // Add Gaussian noise
@@ -93,9 +101,9 @@ int feature_to_index(Vector3 detected_feature){
        return element.first;
      }
   }
-  index_to_feature_map[current_landmark_index]= detected_feature;
-  current_landmark_index++;
-  return current_landmark_index-1;
+  index_to_feature_map[current_landmark_number]= detected_feature;
+  current_landmark_number++;
+  return current_landmark_number-1;
 }
 
 
@@ -120,7 +128,7 @@ bool ground_truth(Vector3 v1){
 bool persistence(int landmark_no){
   //Landmark no: Indicates landmark 1, landmark 2, landmark 3, etc
   if (ground_truth(index_to_feature(landmark_no))){
-    double random = rand()%100;
+    double random = 60;//rand()%100;
     //fprintf(stderr, "Random: %f\n", random);
     bool false_positive = false;
     bool false_negative = false;
@@ -165,66 +173,79 @@ bool persistence(int landmark_no){
 
 
 void one_pass(NonlinearFactorGraph graph) {
+  Vector3 pNoise(0.0,0.0,0.0);
+    auto priorNoise = noiseModel::Diagonal::Sigmas(
+      pNoise);
+    Pose2 prior(0.0, 0.0, 0.0);    
   auto odometryNoise = noiseModel::Diagonal::Sigmas(
       oNoise);
    
   auto measurementNoise = noiseModel::Diagonal::Sigmas(
       mNoise);
   // Adding prior
-  for (int i = 0; i < 5; i++){
+  if (passes == 0){
+     graph.addPrior(Symbol('x',current_pose_index), prior, priorNoise);  // add directly to graph
+  }
+  for (int i = 0; i < num_poses-1; i++){
     //Add a factor between the two poses
     Pose2 noisy_odometry = Pose2(add_noise(oNoise.x(), odometry.x()), add_noise(oNoise.y(), odometry.y()), add_noise(oNoise.z(), odometry.z()));
-    graph.emplace_shared<BetweenFactor<Pose2> >(poses[i], poses[i+1], noisy_odometry, odometryNoise);
+    graph.emplace_shared<BetweenFactor<Pose2> >(Symbol('x',current_pose_index), Symbol('x',current_pose_index+1), noisy_odometry, odometryNoise);
     int map_size = index_to_feature_map.size();
     for (int j = 0; j <map_size; j++){
       bool p = persistence(j);
-      fprintf(stderr, "p: %d, i: %d,j: %d\n", p, i, j);
+      //fprintf(stderr, "p: %d, i: %d,j: %d\n", p, i, j);
       Vector3 feat = index_to_feature(j);
       if (feat.x() >= ground_truth_poses[i].x() && p){
         double angle = atan((feat.y()-ground_truth_poses[i].y())/(feat.x()-ground_truth_poses[i].x()));
         Rot2 bearing = Rot2::fromAngle(add_noise(mNoise.y(), angle));
-        bearing.print();
+        //bearing.print();
         double range = sqrt(pow(feat.y()-ground_truth_poses[i].y(), 2.0)+pow(feat.x()-ground_truth_poses[i].x(), 2.0));
         double noisy_range = add_noise(mNoise.x(), range);
-        fprintf(stderr, "Adding factor: i: %d,j: %d\n", i, j);
-        graph.emplace_shared<BearingRangeFactor<Pose2, Point2> >(poses[i], landmarks[j], bearing, noisy_range, measurementNoise);
+        //fprintf(stderr, "Adding factor: i: %d,j: %d\n", i, j);
+        graph.emplace_shared<BearingRangeFactor<Pose2, Point2> >(Symbol('x',current_pose_index), Symbol('l',j), bearing, noisy_range, measurementNoise);
       }
     }
+    current_pose_index++;
     t+=1.0;
   }
   Values initialEstimate;
-
-  for (int i = 0; i < 6; i++){
-      initialEstimate.insert(poses[i], Pose2(rand()%500/100.0, rand()%500/100.0, rand()%500/100.0));
+  Values initialEstimate2;
+  
+  for (int i = 0; i < num_poses; i++){
+      initialEstimate2.insert(Symbol('x',i+passes*(num_poses-1)), initial_estimate_poses[i]);
   }
 
-   for (int i = 0; i < 3; i++){
-      initialEstimate.insert(landmarks[i], Point2(rand()%500/100.0, rand()%500/100.0));
-  }
-  //graph.emplace_shared<BearingRangeFactor<Pose2, Point2> >(x0, l1, -0.0247947181, 1.98760264, measurementNoise);
-  graph.print();
-  LevenbergMarquardtOptimizer optimizer(graph, initialEstimate);
+   for (int i = 0; i < ground_truth_num_landmarks; i++){
+      initialEstimate2.insert(Symbol('l',i), initial_estimate_landmarks[i]);
+   }
+
+  initialEstimate2.print("Initial estimate: ");
+  //graph.print();
+  LevenbergMarquardtOptimizer optimizer(graph, initialEstimate2);
   Values result = optimizer.optimize();
   result.print("Final: ");
-  //result.at<Point2>(l1);
+
+  //Replace initial_estimate with current SLAM values
+  for (int i = 0; i < num_poses; i++){
+     initial_estimate_poses[i] = result.at<Pose2>(Symbol('x', i+passes*(num_poses-1)));
+  }
+  for (int i = 0; i < ground_truth_num_landmarks; i++){
+     initial_estimate_landmarks[i] = result.at<Point2>(Symbol('l', i));
+  }
+  //Increase the number of passes through the board
+  passes++;
 }
+
 
 int main(int argc, char** argv) {
     // Create the keys we need
-  NonlinearFactorGraph graph;
-  Vector3 pNoise(0.0,0.0,0.0);
-  auto priorNoise = noiseModel::Diagonal::Sigmas(
-    pNoise);
-  Pose2 prior(0.0, 0.0, 0.0);     
-  graph.addPrior(poses[0], prior, priorNoise);  // add directly to graph
   
   for (int i = 0; i < ground_truth_num_landmarks; i ++){
     index_to_feature_map[i] = ground_truth_landmarks[i];
   }
+
    one_pass(graph);
-  // one_pass(graph);
-  // ground_truth_landmarks[0] = Vector3(2.0,1.0,0.0);
-  // one_pass(graph);
+   one_pass(graph);
+   one_pass(graph);
 
 }
-
