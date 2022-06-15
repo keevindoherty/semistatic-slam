@@ -9,6 +9,7 @@
 #include <gtsam/sam/BearingRangeFactor.h>
 #include <gtsam/nonlinear/NonlinearFactorGraph.h>
 #include <gtsam/nonlinear/LevenbergMarquardtOptimizer.h>
+#include <gtsam/gtsam_unstable/nonlinear/BatchFixedLagSmoother.h>
 #include <gtsam/nonlinear/Marginals.h>
 #include <gtsam/nonlinear/Values.h>
 #include <persistence_filter/c++/include/persistence_filter.h>
@@ -38,9 +39,9 @@ static Point3 ground_truth_poses[num_poses] = {Vector3(0.0, 0.0, 0.0), Vector3(1
 
 Point3 ground_truth_landmarks[ground_truth_num_landmarks] = {Vector3(2.0,1.0,0.0), Vector3(2.0,3.0,0.0), Vector3(3.0,5.0,0.0)};
 
-Pose2 initial_estimate_poses[num_poses] = {Pose2(3.07, 2.49, 0.73), Pose2(1.58, 4.3, 2.72), Pose2(0.44, 3.78, -2.05319), Pose2(2.09, 4.4, 1.65), Pose2(4.92, 0.42, -1.41319), Pose2(0.03, 3.27, 2.29), Pose2(2.09, 4.4, 1.65)};
+// list<Pose2> initial_estimate_poses = {Pose2(3.07, 2.49, 0.73), Pose2(1.58, 4.3, 2.72), Pose2(0.44, 3.78, -2.05319), Pose2(2.09, 4.4, 1.65), Pose2(4.92, 0.42, -1.41319), Pose2(0.03, 3.27, 2.29), Pose2(2.09, 4.4, 1.65)};
   
-Point2 initial_estimate_landmarks[ground_truth_num_landmarks] = {Point2(3.4, 1.12), Point2(3.03, 1.69), Point2(2.09, 1.57)};
+// list<Point2> initial_estimate_landmarks = {Point2(3.4, 1.12), Point2(3.03, 1.69), Point2(2.09, 1.57)}
 
 NonlinearFactorGraph graph;
 
@@ -48,7 +49,7 @@ static Vector3 odometry(1.0, 1.0, 0.0);
 
 static Vector2 mNoise(0.01, 0.02);
 
-static Vector3 oNoise(0.2, 0.2, 0.1);
+static Vector3 oNoise(0.02, 0.02, 0.01);
 
 static double lambda_u = 1;
 static double lambda_l = .01;
@@ -62,8 +63,6 @@ double t = 1.0;
 
 int passes = 0;
 
-Values initialEstimate2;
-
 std::uniform_real_distribution<double> distribution(0.0, 5.0);
 static std::default_random_engine generator(time(0));
 
@@ -76,6 +75,9 @@ map<int, Vector3> index_to_feature_map;
 //stores current symbol_index
 int current_landmark_number = ground_truth_num_landmarks;
 int current_pose_index = 0;
+
+int past_pose_index = 0;
+int past_landmark_number = 0;
 
 double h(Vector3 v){
   /*This method hashes a vector to use it as a key in the map*/
@@ -173,10 +175,8 @@ bool persistence(int landmark_no){
   return false;
 }
 
-void one_pass() {
-  if(debug){
-  fprintf(stderr, "Pass %d: \n", passes);
-  }
+Values one_pass(Values estimate) {
+  fprintf(stderr, "\n\n PASS %d: \n", passes);
   Vector3 pNoise(0.0,0.0,0.0);
     auto priorNoise = noiseModel::Diagonal::Sigmas(
       pNoise);
@@ -213,38 +213,87 @@ void one_pass() {
       }
     }
     current_pose_index++;
+    if(debug){
+      fprintf(stderr, "Current pose index increased. New pose index: %d", current_pose_index);
+    }
     t+=1.0;
   }
-  Values initialEstimate;
-  fprintf(stderr, "Before initial estimate\n");
-  if(passes ==0){
-    initialEstimate2.insert(Symbol('x',0), initial_estimate_poses[0]);
-  for (int i = 0; i < ground_truth_num_landmarks; i++){
-    initialEstimate2.insert(Symbol('l',i), initial_estimate_landmarks[i]);
+
+
+  // list<Pose2>::iterator iter_poses = initial_estimate_poses.begin();
+  // list<Point2>::iterator iter_landmarks = initial_estimate_landmarks.begin();
+
+  // for (int i = 0; i < current_landmark_number; i++){
+  //   initialEstimate2.insert(Symbol('l',i), *iter_poses);
+  //   advance(iter_poses, 1);
+  //  }
+  
+  // for (int i = 0; i < current_pose_index; i++){
+  //   initialEstimate2.insert(Symbol('x',i), *iter_landmarks);
+  //   advance(iter_landmarks, 1);
+  // }
+   if(debug){
+    estimate.print("Current Estimate");
    }
-  }
-  for (int i = 1; i < num_poses; i++){
-      initialEstimate2.insert(Symbol('x',i+passes*(num_poses-1)), initial_estimate_poses[i]);
-  }
+
+  Values currentEstimate;
 
   //fprintf(stderr, "initial estimate 2\n");
   //initialEstimate2.print("Initial estimate:");
-  //graph.print();
-  LevenbergMarquardtOptimizer optimizer(graph, initialEstimate2);
-  Values result = optimizer.optimize();
-  //result.print("Final: ");
+  if(passes == 0){
+    past_pose_index = current_pose_index;
+    past_landmark_number = current_landmark_number;
+  }
+
+  for (int i = 0; i <= current_pose_index; i++){
+    //fprintf(stderr, "Poses. i = %d\n", i);
+     currentEstimate.insert(Symbol('x',i), estimate.at<Pose2>(Symbol('x', i% past_pose_index)));
+  }
+
+  for (int i = 1; i < current_landmark_number; i++){
+    //fprintf(stderr, "Landmarks. i = %d\n", i);
+     if(i >= past_landmark_number){
+       currentEstimate.insert(Symbol('l',i), Point2(distribution(generator), distribution(generator)));
+     }
+     else{
+     currentEstimate.insert(Symbol('l',i), estimate.at<Point2>(Symbol('l', i)));
+     }
+  }
+  
+  past_pose_index = current_pose_index;
+  past_landmark_number = current_landmark_number;
+  
+  currentEstimate.print("Final estimate: ");
+  graph.print("Graph: ");
+
+  KeyVector k = {Symbol('l',3)};
+
+  // typedef BatchFixedLagSmoother::KeyTimestampMap Timestamps;
+  BatchFixedLagSmoother smoother;
+  // smoother.update(graph, currentEstimate);
+
+
+  // smoother.marginalize(k);
+
+  graph.print("Marginalized graph");
+
+  LevenbergMarquardtOptimizer optimizer(graph, currentEstimate);
+  Values new_result = optimizer.optimize();
+    new_result.print("Final: ");
+  passes++;
+   
+  return new_result;
 
   //Replace initial_estimate with current SLAM values
   //fprintf(stderr, "optimizer done\n");
-  for (int i = 0; i < num_poses; i++){
-     initial_estimate_poses[i] = result.at<Pose2>(Symbol('x', i+passes*(num_poses-1)));
-  }
-  for (int i = 0; i < current_landmark_number; i++){
-     initial_estimate_landmarks[i] = result.at<Point2>(Symbol('l', i));
-  }
+  // initial_estimate_poses.clear();
+  // initial_estimate_landmarks.clear();
+
+  // auto end_pose = initial_estimate_poses.end();
+  // auto end_landmark = initial_estimate_landmarks.end();
+
   //fprintf(stderr, "end\n");
   //Increase the number of passes through the board
-  passes++;
 }
 
 
@@ -254,17 +303,32 @@ int main(int argc, char** argv) {
   for (int i = 0; i < ground_truth_num_landmarks; i ++){
     index_to_feature_map[i] = ground_truth_landmarks[i];
   }
+  Values initialEstimate;
 
-   one_pass();
-   ground_truth_landmarks[0] = Vector3(3.1, 2.0, 0.0);
-   index_to_feature_map[3] = index_to_feature_map[2];
-   index_to_feature_map[2] = ground_truth_landmarks[0];
-   current_landmark_number++;
-   debug = true;
-   one_pass();
-   one_pass();
-   one_pass();
-   one_pass();
-   one_pass();
+  initialEstimate.insert(Symbol('x',0), Pose2(3.07, 2.49, 0.73));
+  initialEstimate.insert(Symbol('x',1), Pose2(1.58, 4.3, 2.72));
+  initialEstimate.insert(Symbol('x',2), Pose2(0.44, 3.78, -2.05319));
+  initialEstimate.insert(Symbol('x',3), Pose2(2.09, 4.4, 1.65));
+  initialEstimate.insert(Symbol('x',4), Pose2(4.92, 0.42, -1.41319));
+  initialEstimate.insert(Symbol('x',5), Pose2(0.03, 3.27, 2.29));
+  initialEstimate.insert(Symbol('x',6), Pose2(2.09, 4.4, 1.65));
+
+  //initialEstimate.insert(Symbol('l',0), Point2(3.4, 1.12)); 
+  initialEstimate.insert(Symbol('l',1), Point2(3.03, 1.69));
+  initialEstimate.insert(Symbol('l',2), Point2(2.09, 1.57));
+  initialEstimate.insert(Symbol('l',3), Point2(2.09, 1.57)); 
+
+  // Values current_result = one_pass(initialEstimate); 
+  // current_result = one_pass(current_result);
+  ground_truth_landmarks[0] = Vector3(3.1, 2.0, 0.0);
+  index_to_feature_map[3] = ground_truth_landmarks[0];
+  //Index of new landmark is 3
+  current_landmark_number++;
+  debug = true;
+   Values current_result = one_pass(initialEstimate); 
+  // current_result = one_pass(current_result);
+  // current_result = one_pass(current_result);
+
+  //4, 8, 12, 15, 
 
 }
