@@ -8,6 +8,7 @@
 #include <gtsam/slam/BetweenFactor.h>
 #include <gtsam/sam/BearingRangeFactor.h>
 #include <gtsam/nonlinear/NonlinearFactorGraph.h>
+#include <gtsam/linear/GaussianFactorGraph.h>
 #include <gtsam/nonlinear/LevenbergMarquardtOptimizer.h>
 #include <gtsam/gtsam_unstable/nonlinear/BatchFixedLagSmoother.h>
 #include <gtsam/nonlinear/Marginals.h>
@@ -115,6 +116,89 @@ int feature_to_index(Vector3 detected_feature){
   index_to_feature_map[current_landmark_number]= detected_feature;
   current_landmark_number++;
   return current_landmark_number-1;
+}
+
+gtsam::NonlinearFactorGraph removeFactors(const set<size_t>& deleteFactors, gtsam::NonlinearFactorGraph graph){
+  int i = 0;
+  fprintf(stderr, "Size of set = %d\n", deleteFactors.size());
+  auto itr = deleteFactors.begin();
+  for (int i = 0; i<3; i++){
+    fprintf(stderr, "Removing %d factor: \n\n", i);
+     //graph.remove(*itr);
+     //itr++;
+  }
+  // for(size_t slot: deleteFactors) {
+  //     // Remove the factor from the factor graph
+  //     fprintf(stderr, "Removing %d factor: \n\n", i);
+  //     graph.remove(slot);
+  //     fprintf(stderr, "Removed");
+  //     //graph.print("After:");
+  //     i++;
+  // }
+}
+
+gtsam::NonlinearFactorGraph eraseKeys(const KeyVector& keys, gtsam::NonlinearFactorGraph graph) {
+  auto it = graph.begin();
+  for(Key key: keys) {
+    graph.erase(it+key);
+    }
+}
+
+gtsam::NonlinearFactorGraph addFactors(const GaussianFactorGraph& newFactors, gtsam::NonlinearFactorGraph graph) {
+  for(const auto& factor: newFactors){
+    //graph.add(factor); Question: Why is this input not acccepted? Of type boost::shared_ptr<Factor>
+  }
+  graph.print("Gaussian Graph");
+}
+
+//Values linearization_point;
+//linearization_point.insert(Symbol('l',3),Vector3(3.1,2.0,0.0));
+//marginalize(Symbol('l',3),graph,linearization_point);
+
+gtsam::NonlinearFactorGraph marginalize(const gtsam::Key &key, const gtsam::NonlinearFactorGraph graph, const gtsam::Values &linearization_point) {
+  // 1. Determine the factors touching `key` and put them in a separate graph (see https://github.com/borglab/gtsam/blob/43e8f1e5aeaf11890262722c1e5e04a11dbf9d75/gtsam_unstable/nonlinear/BatchFixedLagSmoother.cpp#L314)
+  set<size_t> removedFactorSlots;
+  const VariableIndex variableIndex(graph);
+  const auto& slots = variableIndex[key];
+  removedFactorSlots.insert(slots.begin(), slots.end());
+
+  NonlinearFactorGraph removedFactors;
+  for(size_t slot: removedFactorSlots) {
+    if (graph.at(slot)) {
+      removedFactors.add(graph.at(slot));
+    }
+  }
+
+  removedFactors.print();
+
+  KeyVector k = {key};
+  auto g_ptr = removedFactors.linearize(linearization_point);
+  fprintf(stderr, "DONE LINEARIZING\n");
+  GaussianFactorGraph g = *g_ptr;
+  g.print("Gaussian factor graph");
+  fprintf(stderr, "Removing factors\n");
+  removeFactors(removedFactorSlots, graph);
+  graph.print("Removed factors");
+
+  //g.marginal(k); QUESTION: why is this causing issue?
+  fprintf(stderr, "DONE REMOVING\n");
+
+  // removeFactors(removedFactorSlots, graph);
+
+  // // Remove marginalized keys from the system
+  // eraseKeys(k, graph);
+
+  // addFactors(g, graph);
+
+
+
+  
+  //TODO: Remove factors from graph, etc.
+
+  // 2 Create a copy of the original graph containing all factors _except_ those involved with `key` (to save for later)
+  // 3. Compute the factors induced after marginalizing `key` (see https://github.com/borglab/gtsam/blob/43e8f1e5aeaf11890262722c1e5e04a11dbf9d75/gtsam_unstable/nonlinear/BatchFixedLagSmoother.cpp#L420)
+  // NOTE: This will require supplying a linerization point to produce a GaussianFactorGraph containing the linearized involved factors.
+  // 4. Add the induced factors to the graph without `key` and return it
 }
 
 
@@ -266,21 +350,17 @@ Values one_pass(Values estimate) {
   currentEstimate.print("Final estimate: ");
   graph.print("Graph: ");
 
-  KeyVector k = {Symbol('l',3)};
-
-  // typedef BatchFixedLagSmoother::KeyTimestampMap Timestamps;
-  BatchFixedLagSmoother smoother;
-  // smoother.update(graph, currentEstimate);
-
-
-  // smoother.marginalize(k);
-
-  graph.print("Marginalized graph");
-
   LevenbergMarquardtOptimizer optimizer(graph, currentEstimate);
   Values new_result = optimizer.optimize();
     new_result.print("Final: ");
   passes++;
+
+  KeyVector k = {Symbol('l',3)};
+  Values linearization_point;
+  linearization_point.insert(Symbol('l',3), Vector3(3.1,2.0,0.0));
+  marginalize(Symbol('l',3),graph,new_result);
+
+  graph.print("Marginalized graph");
    
   return new_result;
 

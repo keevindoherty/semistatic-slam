@@ -1,0 +1,12 @@
+# CMake generated Testfile for 
+# Source directory: /Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam_unstable/base/tests
+# Build directory: /Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/build/lib/gtsam/gtsam_unstable/base/tests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(testBTree "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/build/lib/gtsam/gtsam_unstable/base/tests/testBTree")
+set_tests_properties(testBTree PROPERTIES  _BACKTRACE_TRIPLES "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/cmake/GtsamTesting.cmake;176;add_test;/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/cmake/GtsamTesting.cmake;30;gtsamAddTestsGlob_impl;/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam_unstable/base/tests/CMakeLists.txt;1;gtsamAddTestsGlob;/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam_unstable/base/tests/CMakeLists.txt;0;")
+add_test(testDSF "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/build/lib/gtsam/gtsam_unstable/base/tests/testDSF")
+set_tests_properties(testDSF PROPERTIES  _BACKTRACE_TRIPLES "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/cmake/GtsamTesting.cmake;176;add_test;/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/cmake/GtsamTesting.cmake;30;gtsamAddTestsGlob_impl;/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam_unstable/base/tests/CMakeLists.txt;1;gtsamAddTestsGlob;/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam_unstable/base/tests/CMakeLists.txt;0;")
+add_test(testFixedVector "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/build/lib/gtsam/gtsam_unstable/base/tests/testFixedVector")
+set_tests_properties(testFixedVector PROPERTIES  _BACKTRACE_TRIPLES "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/cmake/GtsamTesting.cmake;176;add_test;/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/cmake/GtsamTesting.cmake;30;gtsamAddTestsGlob_impl;/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam_unstable/base/tests/CMakeLists.txt;1;gtsamAddTestsGlob;/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam_unstable/base/tests/CMakeLists.txt;0;")
