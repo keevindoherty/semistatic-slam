@@ -1,0 +1,46 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/gtsam/gtsam_unstable/base/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam_unstable/base",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam_unstable/base/BTree.h",
+				"lib/gtsam/gtsam_unstable/base/DSF.h",
+				"lib/gtsam/gtsam_unstable/base/Dummy.h",
+				"lib/gtsam/gtsam_unstable/base/FixedVector.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam_unstable/base",
+		"source" : "lib/gtsam/gtsam_unstable/base"
+	}
+}

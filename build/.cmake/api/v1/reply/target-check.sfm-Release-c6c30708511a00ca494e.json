@@ -1,0 +1,159 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"gtsamAddTestsGlob_impl",
+			"gtsamAddTestsGlob",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"lib/gtsam/cmake/GtsamTesting.cmake",
+			"lib/gtsam/gtsam/sfm/tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "testBinaryMeasurement::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "testMFAS::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "testSfmData::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "testShonanAveraging::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "testShonanFactor::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "testShonanGaugeFactor::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "testTranslationFactor::@a3211d39a457f634617f"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Unit tests"
+	},
+	"id" : "check.sfm::@a3211d39a457f634617f",
+	"name" : "check.sfm",
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam/sfm/tests",
+		"source" : "lib/gtsam/gtsam/sfm/tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/lib/gtsam/gtsam/sfm/tests/CMakeFiles/check.sfm",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/gtsam/gtsam/sfm/tests/CMakeFiles/check.sfm.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

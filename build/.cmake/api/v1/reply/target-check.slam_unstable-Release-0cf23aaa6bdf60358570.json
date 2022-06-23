@@ -1,0 +1,399 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"gtsamAddTestsGlob_impl",
+			"gtsamAddTestsGlob",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"lib/gtsam/cmake/GtsamTesting.cmake",
+			"lib/gtsam/gtsam_unstable/slam/tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "testLocalOrientedPlane3Factor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "testInvDepthFactorVariant3::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "testMultiProjectionFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "testOccupancyGrid::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "testPartialPriorFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "testPoseBetweenFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "testAHRS::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "testBetweenFactorEM::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "testBiasedGPSFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "testDummyFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "testEquivInertialNavFactor_GlobalVel::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "testGaussMarkov1stOrderFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "testInertialNavFactor_GlobalVelocity::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "testInvDepthFactor3::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "testInvDepthFactorVariant1::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "testInvDepthFactorVariant2::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 20,
+			"id" : "testPosePriorFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "testPoseToPointFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "testProjectionFactorPPP::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 23,
+			"id" : "testProjectionFactorPPPC::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "testProjectionFactorRollingShutter::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "testRelativeElevationFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 26,
+			"id" : "testSmartProjectionPoseFactorRollingShutter::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "testSmartRangeFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "testSmartStereoFactor_iSAM2::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 29,
+			"id" : "testSmartStereoProjectionFactorPP::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "testSmartStereoProjectionPoseFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "testTOAFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 32,
+			"id" : "testTSAMFactors::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 33,
+			"id" : "testTransformBtwRobotsUnaryFactor::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 34,
+			"id" : "testTransformBtwRobotsUnaryFactorEM::@a3c6e10d2951e7b13712"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Unit tests"
+	},
+	"id" : "check.slam_unstable::@a3c6e10d2951e7b13712",
+	"name" : "check.slam_unstable",
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam_unstable/slam/tests",
+		"source" : "lib/gtsam/gtsam_unstable/slam/tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/lib/gtsam/gtsam_unstable/slam/tests/CMakeFiles/check.slam_unstable",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/gtsam/gtsam_unstable/slam/tests/CMakeFiles/check.slam_unstable.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

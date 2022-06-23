@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam/linear/tests",
+		"source" : "lib/gtsam/gtsam/linear/tests"
+	}
+}

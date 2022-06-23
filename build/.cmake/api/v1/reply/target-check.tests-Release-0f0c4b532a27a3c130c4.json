@@ -1,0 +1,429 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"gtsamAddTestsGlob_impl",
+			"gtsamAddTestsGlob",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"lib/gtsam/cmake/GtsamTesting.cmake",
+			"lib/gtsam/tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "testBoundingConstraint::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "testDoglegOptimizer::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "testExpressionFactor::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "testExtendedKalmanFilter::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "testGaussianBayesTreeB::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "testGaussianFactorGraphB::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "testGaussianISAM::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "testGaussianISAM2::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "testGaussianJunctionTreeB::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "testGeneralSFMFactorB::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "testGncOptimizer::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "testGradientDescentOptimizer::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "testGraph::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "testImuPreintegration::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "testIterative::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "testLie::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 20,
+			"id" : "testManifold::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "testMarginals::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "testNonlinearEquality::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 23,
+			"id" : "testNonlinearFactor::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "testNonlinearFactorGraph::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "testNonlinearISAM::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 26,
+			"id" : "testNonlinearOptimizer::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "testPCGSolver::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "testPreconditioner::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 29,
+			"id" : "testRot3Optimization::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "testSerializationSlam::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "testSimulated2D::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 32,
+			"id" : "testSimulated2DOriented::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 33,
+			"id" : "testSimulated3D::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 34,
+			"id" : "testSubgraphPreconditioner::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 35,
+			"id" : "testSubgraphSolver::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 36,
+			"id" : "testTranslationRecovery::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 37,
+			"id" : "testVisualISAM2::@77e8dc809077bf0c1f89"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Unit tests"
+	},
+	"id" : "check.tests::@77e8dc809077bf0c1f89",
+	"name" : "check.tests",
+	"paths" : 
+	{
+		"build" : "lib/gtsam/tests",
+		"source" : "lib/gtsam/tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/lib/gtsam/tests/CMakeFiles/check.tests",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/gtsam/tests/CMakeFiles/check.tests.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

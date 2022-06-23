@@ -1795,8 +1795,264 @@ CMakeFiles/semantic_slam.dir/src/SLAM_persistence.cpp.o: ../src/SLAM_persistence
   /usr/local/include/gsl/gsl_sf_result.h \
   /usr/local/include/gsl/gsl_precision.h \
   /usr/local/include/gsl/gsl_types.h \
-  ../lib/persistence_filter/c++/include/persistence_filter_utils.h
+  ../lib/persistence_filter/c++/include/persistence_filter_utils.h \
+  ../lib/matplotlibcpp.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/Python.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/patchlevel.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyconfig.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pymacconfig.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyport.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/inttypes.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/inttypes.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/inttypes.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_inttypes.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/stat.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_s_ifmt.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_filesec_t.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/exports.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pymacro.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pymath.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pytime.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/object.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/object.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pymem.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/pymem.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/objimpl.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/objimpl.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/typeslots.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyhash.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pydebug.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/bytearrayobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/bytearrayobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/bytesobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/bytesobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/unicodeobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/unicodeobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/longobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/longintrepr.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/boolobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/floatobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/complexobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/rangeobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/memoryobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/tupleobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/tupleobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/listobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/listobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/dictobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/dictobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/odictobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/enumobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/setobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/methodobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/methodobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/moduleobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/funcobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/classobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/fileobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/fileobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pycapsule.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/code.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/code.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyframe.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/traceback.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/traceback.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/sliceobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cellobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/iterobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/initconfig.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/genobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pystate.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/pystate.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/descrobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/genericaliasobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/warnings.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/weakrefobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/structseq.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/namespaceobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/picklebufobject.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/codecs.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyerrors.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/pyerrors.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pythread.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/context.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyarena.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/modsupport.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/compile.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pythonrun.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pylifecycle.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/pylifecycle.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/ceval.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/ceval.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/sysmodule.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/sysmodule.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/osmodule.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/intrcheck.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/import.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/import.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/abstract.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/abstract.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/bltinmodule.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/eval.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyctype.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pystrtod.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pystrcmp.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/fileutils.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/fileutils.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyfpe.h \
+  /usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/tracemalloc.h \
+  /Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/arrayobject.h \
+  /Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/ndarrayobject.h \
+  /Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/ndarraytypes.h \
+  /Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/npy_common.h \
+  /Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/numpyconfig.h \
+  /Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/_numpyconfig.h \
+  /Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/npy_endian.h \
+  /Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/npy_cpu.h \
+  /Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/utils.h \
+  /Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h \
+  /Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/__multiarray_api.h \
+  /Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/npy_interrupt.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/setjmp.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/setjmp.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/signal.h
 
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/signal.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/setjmp.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/setjmp.h:
+
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/npy_interrupt.h:
+
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/npy_cpu.h:
+
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/npy_endian.h:
+
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/ndarraytypes.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/tracemalloc.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/fileutils.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pystrcmp.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/eval.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/import.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/osmodule.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/sysmodule.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/pylifecycle.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pythonrun.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/compile.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/modsupport.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pythread.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/pyerrors.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/codecs.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/picklebufobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/namespaceobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/warnings.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/descrobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/pystate.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/genobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/initconfig.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cellobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/traceback.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/traceback.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyframe.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/code.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/code.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pycapsule.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/fileobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/moduleobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/methodobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/setobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/enumobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/odictobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/listobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/tupleobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/rangeobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/complexobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/classobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/boolobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/longintrepr.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/unicodeobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/bytesobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pydebug.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyhash.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/typeslots.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/objimpl.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/pymem.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pymem.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/longobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pytime.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pymath.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pymacro.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/exports.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_filesec_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_inttypes.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/inttypes.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyconfig.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/patchlevel.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/Python.h:
+
+../lib/matplotlibcpp.h:
 
 /usr/local/include/gsl/gsl_precision.h:
 
@@ -1874,6 +2130,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/lexical_cast/detail/converter_lexical.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyfpe.h:
+
 /usr/local/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
 
 /usr/local/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp:
@@ -1887,6 +2145,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/numeric/conversion/detail/converter.hpp:
 
 /usr/local/include/boost/numeric/conversion/converter_policies.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/fileobject.h:
 
 /usr/local/include/boost/mpl/aux_/preprocessed/gcc/times.hpp:
 
@@ -1986,6 +2246,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/time.h:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/sysmodule.h:
+
 /usr/local/include/boost/date_time/c_time.hpp:
 
 /usr/local/include/boost/date_time/date_generators.hpp:
@@ -1997,6 +2259,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/date_time/date_duration.hpp:
 
 /usr/local/include/boost/date_time/gregorian/greg_year.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/sliceobject.h:
 
 /usr/local/include/boost/date_time/posix_time/posix_time_duration.hpp:
 
@@ -2099,6 +2363,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/mpl/vector/aux_/pop_front.hpp:
 
 /usr/local/include/boost/multi_index/detail/unbounded.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/bytesobject.h:
 
 /usr/local/include/boost/multi_index/detail/ord_index_ops.hpp:
 
@@ -2346,6 +2612,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 ../lib/gtsam/gtsam/inference/Ordering.h:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/abstract.h:
+
 /usr/local/include/boost/preprocessor/arithmetic/limits/dec_256.hpp:
 
 /usr/local/include/boost/variant/detail/element_index.hpp:
@@ -2504,6 +2772,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/mpl/set/aux_/begin_end_impl.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/object.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset:
 
 /usr/local/include/boost/type_traits/has_trivial_copy.hpp:
@@ -2564,7 +2834,11 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/mpl/pop_front_fwd.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/bltinmodule.h:
+
 /usr/local/include/boost/mpl/list/aux_/push_front.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pymacconfig.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blksize_t.h:
 
@@ -2591,6 +2865,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__errc:
 
 /usr/local/include/boost/mpl/O1_size.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/weakrefobject.h:
 
 /usr/local/include/boost/mpl/sequence_tag_fwd.hpp:
 
@@ -2659,6 +2935,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/container_hash/hash.hpp:
 
 /usr/local/include/boost/container_hash/hash_fwd.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/fileutils.h:
 
 /usr/local/include/boost/type_index/type_index_facade.hpp:
 
@@ -2735,6 +3013,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/preprocessor/seq/enum.hpp:
 
 /usr/local/include/boost/mpl/clear_fwd.hpp:
+
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/__multiarray_api.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_uint16_t.h:
 
@@ -2848,6 +3128,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/serialization/array.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/abstract.h:
+
 /usr/local/include/boost/mpl/push_front_fwd.hpp:
 
 ../lib/gtsam/gtsam/base/MatrixSerialization.h:
@@ -2890,6 +3172,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/mpl/begin_end_fwd.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/ceval.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/wait.h:
 
 /usr/local/include/boost/noncopyable.hpp:
@@ -2913,6 +3197,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
 
 /usr/local/include/boost/core/is_same.hpp:
+
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/_numpyconfig.h:
 
 /usr/local/include/boost/visit_each.hpp:
 
@@ -3116,6 +3402,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/iterator/transform_iterator.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/import.h:
+
 /usr/local/include/boost/smart_ptr/make_shared.hpp:
 
 /usr/local/include/boost/range/algorithm/set_algorithm.hpp:
@@ -3206,6 +3494,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/range/algorithm/partial_sort.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/unicodeobject.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_timespec.h:
 
 /usr/local/include/boost/make_shared.hpp:
@@ -3237,6 +3527,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__tree:
 
 /usr/local/include/boost/multi_index/detail/raw_ptr.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/memoryobject.h:
 
 /usr/local/include/boost/serialization/map.hpp:
 
@@ -3402,6 +3694,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/mpl/aux_/has_size.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/tupleobject.h:
+
 /usr/local/include/boost/mpl/aux_/numeric_cast_utils.hpp:
 
 /usr/local/include/boost/mpl/void.hpp:
@@ -3429,6 +3723,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/mpl/integral_c.hpp:
 
 /usr/local/include/boost/mpl/aux_/fold_impl.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pystrtod.h:
 
 /usr/local/include/boost/serialization/wrapper.hpp:
 
@@ -3475,6 +3771,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/assign/list_inserter.hpp:
 
 /usr/local/include/boost/range/detail/misc_concept.hpp:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/inttypes.h:
 
 /usr/local/include/boost/range/algorithm/fill.hpp:
 
@@ -3640,6 +3938,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/type_traits/make_void.hpp:
 
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/arrayobject.h:
+
 /usr/local/include/boost/preprocessor/seq/limits/size_256.hpp:
 
 ../lib/gtsam/gtsam/3rdparty/Eigen/Eigen/src/plugins/CommonCwiseUnaryOps.h:
@@ -3649,6 +3949,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/preprocessor/identity.hpp:
 
 /usr/local/include/boost/preprocessor/logical/bitand.hpp:
+
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/utils.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_posix_availability.h:
 
@@ -3762,6 +4064,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/movdirintrin.h:
 
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/ndarrayobject.h:
+
 /usr/local/include/boost/ref.hpp:
 
 /usr/local/include/boost/preprocessor/punctuation/comma.hpp:
@@ -3803,6 +4107,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/preprocessor/facilities/expand.hpp:
 
 /usr/local/include/boost/mpl/set/aux_/set0.hpp:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/inttypes.h:
 
 /usr/local/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
 
@@ -3865,6 +4171,10 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/preprocessor/arithmetic/inc.hpp:
 
 ../lib/gtsam/gtsam/base/Group.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/funcobject.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/bytearrayobject.h:
 
 ../lib/gtsam/gtsam/nonlinear/NonlinearFactor.h:
 
@@ -3996,6 +4306,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/type_traits/enable_if.hpp:
 
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h:
+
 /usr/local/include/boost/type_traits/is_assignable.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int64_t.h:
@@ -4020,6 +4332,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/mpl/insert_range_fwd.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/genericaliasobject.h:
+
 /usr/local/include/boost/variant/detail/backup_holder.hpp:
 
 ../lib/gtsam/gtsam/3rdparty/Eigen/Eigen/src/Core/GlobalFunctions.h:
@@ -4031,6 +4345,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/type_traits/is_class.hpp:
 
 /usr/local/include/boost/utility/compare_pointees.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pylifecycle.h:
 
 /usr/local/include/boost/type_traits/is_same.hpp:
 
@@ -4192,6 +4508,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/mpl/aux_/insert_impl.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/dictobject.h:
+
 /usr/local/include/boost/mpl/aux_/template_arity.hpp:
 
 ../lib/gtsam/gtsam/3rdparty/Eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
@@ -4203,6 +4521,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_endian.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/hresetintrin.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/iterobject.h:
 
 ../lib/gtsam/gtsam/3rdparty/Eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
 
@@ -4305,6 +4625,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/mpl/aux_/lambda_spec.hpp:
 
 /usr/local/include/boost/type_traits/detail/is_function_cxx_11.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/ceval.h:
 
 ../lib/gtsam/gtsam/3rdparty/Eigen/Eigen/src/Core/CommaInitializer.h:
 
@@ -4478,6 +4800,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 ../lib/gtsam/gtsam/3rdparty/Eigen/Eigen/src/Core/NumTraits.h:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyerrors.h:
+
 ../lib/gtsam/gtsam/3rdparty/Eigen/Eigen/src/SVD/SVDBase.h:
 
 /usr/local/include/boost/optional/bad_optional_access.hpp:
@@ -4622,6 +4946,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 ../lib/gtsam/gtsam/3rdparty/Eigen/Eigen/src/Core/Map.h:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/intrcheck.h:
+
 /usr/local/include/boost/mpl/if.hpp:
 
 ../lib/gtsam/gtsam/3rdparty/Eigen/Eigen/src/Core/util/BlasUtil.h:
@@ -4633,6 +4959,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/multi_index/detail/duplicates_iterator.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int16_t.h:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/bytearrayobject.h:
 
 ../lib/gtsam/gtsam/3rdparty/Eigen/Eigen/src/Core/arch/AVX/Complex.h:
 
@@ -4778,6 +5106,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 ../lib/gtsam/gtsam/3rdparty/Eigen/Eigen/src/Core/CwiseNullaryOp.h:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/dictobject.h:
+
 /usr/local/include/boost/mpl/sequence_tag.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__functional_base:
@@ -4789,6 +5119,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/date_time/posix_time/time_period.hpp:
 
 /usr/local/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/structseq.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
@@ -4818,11 +5150,17 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/preprocessor/repetition/enum_params.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/floatobject.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_nlink_t.h:
 
 /usr/local/include/boost/integer_fwd.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/context.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ino64_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/stat.h:
 
 /usr/local/include/boost/range/range_fwd.hpp:
 
@@ -5016,6 +5354,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/nl_types.h:
 
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/numpyconfig.h:
+
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/cetintrin.h:
 
 /usr/local/include/boost/bimap/relation/support/is_tag_of_member_at.hpp:
@@ -5052,6 +5392,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 
 /usr/local/include/boost/multi_index/detail/ord_index_node.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/methodobject.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/string:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdio.h:
@@ -5065,6 +5407,8 @@ lib/gtsam/gtsam_unstable/dllexport.h:
 /usr/local/include/boost/iterator/distance.hpp:
 
 /usr/local/include/boost/concept/requires.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyport.h:
 
 /usr/local/include/boost/concept/usage.hpp:
 
@@ -5130,6 +5474,8 @@ lib/gtsam/gtsam/dllexport.h:
 
 /usr/local/include/boost/preprocessor/list/fold_right.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pystate.h:
+
 ../lib/gtsam/gtsam/3rdparty/Eigen/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
 
 /usr/local/include/boost/preprocessor/cat.hpp:
@@ -5150,6 +5496,8 @@ lib/gtsam/gtsam/dllexport.h:
 
 /usr/local/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/object.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_wctype.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_def.h:
@@ -5169,6 +5517,8 @@ lib/gtsam/gtsam/dllexport.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_off_t.h:
 
 /usr/local/include/boost/type_traits/extent.hpp:
+
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include/numpy/npy_common.h:
 
 /usr/local/include/boost/variant/variant.hpp:
 
@@ -5252,6 +5602,8 @@ lib/gtsam/gtsam/dllexport.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_int8_t.h:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyarena.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_ucontext.h:
 
 /usr/local/include/boost/date_time/filetime_functions.hpp:
@@ -5271,6 +5623,8 @@ lib/gtsam/gtsam/dllexport.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stddef.h:
 
 /usr/local/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/pyctype.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/cdefs.h:
 
@@ -5307,6 +5661,8 @@ lib/gtsam/gtsam/config.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/pthread/qos.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_s_ifmt.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_blkcnt_t.h:
 
@@ -5350,6 +5706,8 @@ lib/gtsam/gtsam/config.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_intmax_t.h:
 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/listobject.h:
+
 /usr/local/include/boost/variant/detail/hash_variant.hpp:
 
 /usr/local/include/boost/type_traits/remove_const.hpp:
@@ -5363,6 +5721,8 @@ lib/gtsam/gtsam/config.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/machine/signal.h:
 
 /usr/local/include/boost/mpl/aux_/preprocessed/gcc/inherit.hpp:
+
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/cpython/objimpl.h:
 
 /usr/local/include/boost/type_traits/is_signed.hpp:
 

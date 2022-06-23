@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam/symbolic/tests",
+		"source" : "lib/gtsam/gtsam/symbolic/tests"
+	}
+}

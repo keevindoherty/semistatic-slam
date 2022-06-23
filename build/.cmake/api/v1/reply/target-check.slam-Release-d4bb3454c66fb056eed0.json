@@ -1,0 +1,379 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"gtsamAddTestsGlob_impl",
+			"gtsamAddTestsGlob",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"lib/gtsam/cmake/GtsamTesting.cmake",
+			"lib/gtsam/gtsam/slam/tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "testAntiFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "testBetweenFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "testDataset::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "testEssentialMatrixConstraint::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "testEssentialMatrixFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "testFrobeniusFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "testGeneralSFMFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "testGeneralSFMFactor_Cal3Bundler::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "testInitializePose::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "testInitializePose3::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "testKarcherMeanFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "testLago::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "testOrientedPlane3Factor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "testPoseRotationPrior::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "testPoseTranslationPrior::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "testPriorFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 20,
+			"id" : "testProjectionFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "testReferenceFrameFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "testRegularImplicitSchurFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 23,
+			"id" : "testRotateFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "testSerializationDataset::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "testSerializationInSlam::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 26,
+			"id" : "testSlamExpressions::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "testSmartFactorBase::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "testSmartProjectionFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 29,
+			"id" : "testSmartProjectionPoseFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "testSmartProjectionRigFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "testStereoFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 32,
+			"id" : "testTriangulationFactor::@cc0cb394f4e6915350b5"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Unit tests"
+	},
+	"id" : "check.slam::@cc0cb394f4e6915350b5",
+	"name" : "check.slam",
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam/slam/tests",
+		"source" : "lib/gtsam/gtsam/slam/tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/lib/gtsam/gtsam/slam/tests/CMakeFiles/check.slam",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/gtsam/gtsam/slam/tests/CMakeFiles/check.slam.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

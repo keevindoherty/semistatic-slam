@@ -1,0 +1,539 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/gtsam/gtsam/3rdparty/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/CCOLAMD",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/CCOLAMD/Include/ccolamd.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/SuiteSparse_config",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/SuiteSparse_config/SuiteSparse_config.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/Cholesky"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/CholmodSupport"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/Core"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/Dense"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/Eigen"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/Eigenvalues"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/Geometry"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/Householder"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/IterativeLinearSolvers"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/Jacobi"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/LU"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/MetisSupport"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/OrderingMethods"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/PaStiXSupport"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 17,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/PardisoSupport"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 18,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/QR"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/QtAlignedMalloc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 20,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/SPQRSupport"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 21,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/SVD"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 22,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/Sparse"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 23,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/SparseCholesky"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 24,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/SparseCore"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 25,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/SparseLU"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 26,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/SparseQR"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 27,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/StdDeque"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 28,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/StdList"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 29,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/StdVector"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 30,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/SuperLUSupport"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 31,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen/UmfPackSupport"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 32,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/3rdparty/Eigen",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/3rdparty/Eigen/Eigen"
+			],
+			"type" : "directory"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam/3rdparty",
+		"source" : "lib/gtsam/gtsam/3rdparty"
+	}
+}

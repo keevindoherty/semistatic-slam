@@ -1,0 +1,425 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"add_dependencies",
+			"gtsamAddExesGlob_impl",
+			"gtsamAddTimingGlob"
+		],
+		"files" : 
+		[
+			"lib/gtsam/cmake/GtsamTesting.cmake",
+			"lib/gtsam/CMakeLists.txt",
+			"lib/gtsam/timing/CMakeLists.txt",
+			"lib/gtsam/gtsam_unstable/timing/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 120,
+				"parent" : 2
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 1,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 1,
+				"parent" : 38
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 39
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 40
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 40
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 40
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "timeAdaptAutoDiff::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "timeBatch::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "timeCalibratedCamera::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "timeCameraExpression::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "timeCholesky::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "timeFactorOverhead::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "timeGaussianFactor::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "timeGaussianFactorGraph::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "timeIncremental::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "timeLago::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "timeMatrix::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "timeMatrixOps::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "timeOneCameraExpression::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 20,
+			"id" : "timePinholeCamera::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "timePose2::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "timePose3::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 23,
+			"id" : "timeRot2::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "timeRot3::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "timeSFMBAL::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 26,
+			"id" : "timeSFMBALautodiff::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "timeSFMBALcamTnav::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "timeSFMBALnavTcam::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 29,
+			"id" : "timeSFMBALsmart::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "timeSFMExpressions::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "timeSchurFactors::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 32,
+			"id" : "timeShonanFactor::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 33,
+			"id" : "timeStereoCamera::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 34,
+			"id" : "timeTest::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 35,
+			"id" : "timeVirtual2::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 36,
+			"id" : "timeVirtual::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 37,
+			"id" : "timeiSAM2Chain::@353f3cfc55e76778abe5"
+		},
+		{
+			"backtrace" : 41,
+			"id" : "timeDSFvariants::@ac35b9c05ba3b642113d"
+		},
+		{
+			"backtrace" : 42,
+			"id" : "timeInertialNavFactor_GlobalVelocity::@ac35b9c05ba3b642113d"
+		},
+		{
+			"backtrace" : 43,
+			"id" : "timeShonanAveraging::@ac35b9c05ba3b642113d"
+		}
+	],
+	"id" : "timing::@0783fabc0c5c51eea083",
+	"name" : "timing",
+	"paths" : 
+	{
+		"build" : "lib/gtsam",
+		"source" : "lib/gtsam"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

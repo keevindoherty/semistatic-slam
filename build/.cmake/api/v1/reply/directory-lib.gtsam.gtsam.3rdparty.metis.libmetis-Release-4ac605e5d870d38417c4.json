@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam/3rdparty/metis",
+		"source" : "lib/gtsam/gtsam/3rdparty/metis"
+	}
+}

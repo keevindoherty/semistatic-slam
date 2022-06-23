@@ -1,0 +1,74 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/gtsam/gtsam_unstable/slam/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam_unstable/slam",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam_unstable/slam/AHRS.h",
+				"lib/gtsam/gtsam_unstable/slam/BetweenFactorEM.h",
+				"lib/gtsam/gtsam_unstable/slam/BiasedGPSFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/DummyFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/EquivInertialNavFactor_GlobalVel.h",
+				"lib/gtsam/gtsam_unstable/slam/EquivInertialNavFactor_GlobalVel_NoBias.h",
+				"lib/gtsam/gtsam_unstable/slam/GaussMarkov1stOrderFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/InertialNavFactor_GlobalVelocity.h",
+				"lib/gtsam/gtsam_unstable/slam/InvDepthFactor3.h",
+				"lib/gtsam/gtsam_unstable/slam/InvDepthFactorVariant1.h",
+				"lib/gtsam/gtsam_unstable/slam/InvDepthFactorVariant2.h",
+				"lib/gtsam/gtsam_unstable/slam/InvDepthFactorVariant3.h",
+				"lib/gtsam/gtsam_unstable/slam/LocalOrientedPlane3Factor.h",
+				"lib/gtsam/gtsam_unstable/slam/Mechanization_bRn2.h",
+				"lib/gtsam/gtsam_unstable/slam/MultiProjectionFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/PartialPriorFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/PoseBetweenFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/PosePriorFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/PoseToPointFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/ProjectionFactorPPP.h",
+				"lib/gtsam/gtsam_unstable/slam/ProjectionFactorPPPC.h",
+				"lib/gtsam/gtsam_unstable/slam/ProjectionFactorRollingShutter.h",
+				"lib/gtsam/gtsam_unstable/slam/RelativeElevationFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/SmartProjectionPoseFactorRollingShutter.h",
+				"lib/gtsam/gtsam_unstable/slam/SmartRangeFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/SmartStereoProjectionFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/SmartStereoProjectionFactorPP.h",
+				"lib/gtsam/gtsam_unstable/slam/SmartStereoProjectionPoseFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/TOAFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/TSAMFactors.h",
+				"lib/gtsam/gtsam_unstable/slam/TransformBtwRobotsUnaryFactor.h",
+				"lib/gtsam/gtsam_unstable/slam/TransformBtwRobotsUnaryFactorEM.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam_unstable/slam",
+		"source" : "lib/gtsam/gtsam_unstable/slam"
+	}
+}

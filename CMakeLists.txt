@@ -24,6 +24,9 @@ src/SLAM_persistence.cpp
 )
 
 include_directories(semantic_slam lib)
+include_directories(semantic_slam 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include)
 
 target_link_libraries(
     semantic_slam
