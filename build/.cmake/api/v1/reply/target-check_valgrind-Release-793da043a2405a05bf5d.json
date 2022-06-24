@@ -18,22 +18,22 @@
 			"lib/gtsam/gtsam/basis/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam/geometry/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam/inference/tests/CMakeLists.txt",
-			"lib/gtsam/gtsam/sfm/tests/CMakeLists.txt",
+			"lib/gtsam/gtsam/slam/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam/symbolic/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam/discrete/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam/linear/tests/CMakeLists.txt",
+			"lib/gtsam/gtsam/navigation/tests/CMakeLists.txt",
+			"lib/gtsam/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam/nonlinear/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam/sam/tests/CMakeLists.txt",
-			"lib/gtsam/gtsam/slam/tests/CMakeLists.txt",
-			"lib/gtsam/gtsam/navigation/tests/CMakeLists.txt",
-			"lib/gtsam/gtsam_unstable/slam/tests/CMakeLists.txt",
-			"lib/gtsam/tests/CMakeLists.txt",
+			"lib/gtsam/gtsam/sfm/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam_unstable/base/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam_unstable/geometry/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam_unstable/linear/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam_unstable/discrete/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam_unstable/dynamics/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam_unstable/nonlinear/tests/CMakeLists.txt",
+			"lib/gtsam/gtsam_unstable/slam/tests/CMakeLists.txt",
 			"lib/gtsam/gtsam_unstable/partition/tests/CMakeLists.txt"
 		],
 		"nodes" : 
@@ -709,103 +709,145 @@
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 113
+				"parent" : 77
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 77
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 77
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 77
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 77
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 77
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 77
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 77
 			},
 			{
 				"file" : 10
@@ -813,80 +855,110 @@
 			{
 				"command" : 4,
 				"file" : 10,
-				"line" : 1,
-				"parent" : 133
+				"line" : 27,
+				"parent" : 140
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 30,
-				"parent" : 134
+				"parent" : 141
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 135
+				"parent" : 142
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 135
+				"parent" : 142
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 135
+				"parent" : 142
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 135
+				"parent" : 142
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 135
+				"parent" : 142
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 135
+				"parent" : 142
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 135
+				"parent" : 142
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 135
+				"parent" : 142
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 135
+				"parent" : 142
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 135
+				"parent" : 142
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 135
+				"parent" : 142
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 142
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 142
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 142
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 142
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 142
 			},
 			{
 				"file" : 11
@@ -894,74 +966,254 @@
 			{
 				"command" : 4,
 				"file" : 11,
-				"line" : 1,
-				"parent" : 147
+				"line" : 11,
+				"parent" : 159
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 30,
-				"parent" : 148
+				"parent" : 160
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 149
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 149
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 149
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 149
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 77
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 77
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 77
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 77
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 77
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 77
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 113
 			},
 			{
 				"file" : 12
@@ -970,187 +1222,79 @@
 				"command" : 4,
 				"file" : 12,
 				"line" : 1,
-				"parent" : 160
+				"parent" : 202
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 30,
-				"parent" : 161
+				"parent" : 203
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 162
+				"parent" : 204
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 162
+				"parent" : 204
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 162
+				"parent" : 204
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 162
+				"parent" : 204
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 162
+				"parent" : 204
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 162
+				"parent" : 204
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 162
+				"parent" : 204
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 162
+				"parent" : 204
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 162
+				"parent" : 204
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 162
+				"parent" : 204
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 162
+				"parent" : 204
 			},
 			{
 				"file" : 13
@@ -1158,38 +1302,38 @@
 			{
 				"command" : 4,
 				"file" : 13,
-				"line" : 27,
-				"parent" : 192
+				"line" : 1,
+				"parent" : 216
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 30,
-				"parent" : 193
+				"parent" : 217
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 218
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 218
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 218
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 218
 			},
 			{
 				"file" : 14
@@ -1197,122 +1341,146 @@
 			{
 				"command" : 4,
 				"file" : 14,
-				"line" : 7,
-				"parent" : 199
+				"line" : 1,
+				"parent" : 223
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 30,
-				"parent" : 200
+				"parent" : 224
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 225
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 225
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 225
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 225
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 225
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 225
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 225
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 77
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 161
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 194
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 161
 			},
 			{
 				"file" : 15
@@ -1320,218 +1488,32 @@
 			{
 				"command" : 4,
 				"file" : 15,
-				"line" : 11,
-				"parent" : 220
+				"line" : 1,
+				"parent" : 248
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 30,
-				"parent" : 221
+				"parent" : 249
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 222
+				"parent" : 250
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 222
+				"parent" : 250
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 222
+				"parent" : 250
 			},
 			{
 				"file" : 16
@@ -1540,31 +1522,49 @@
 				"command" : 4,
 				"file" : 16,
 				"line" : 1,
-				"parent" : 257
+				"parent" : 254
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 30,
-				"parent" : 258
+				"parent" : 255
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 259
+				"parent" : 256
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 259
+				"parent" : 256
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 259
+				"parent" : 256
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 256
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 256
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 256
 			},
 			{
 				"file" : 17
@@ -1600,55 +1600,43 @@
 				"parent" : 265
 			},
 			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 265
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 265
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 265
-			},
-			{
 				"file" : 18
 			},
 			{
 				"command" : 4,
 				"file" : 18,
 				"line" : 1,
-				"parent" : 272
+				"parent" : 269
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 30,
-				"parent" : 273
+				"parent" : 270
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 274
+				"parent" : 271
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 274
+				"parent" : 271
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 274
+				"parent" : 271
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 271
 			},
 			{
 				"file" : 19
@@ -1657,37 +1645,49 @@
 				"command" : 4,
 				"file" : 19,
 				"line" : 1,
-				"parent" : 278
+				"parent" : 276
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 30,
-				"parent" : 279
+				"parent" : 277
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 280
+				"parent" : 278
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 280
+				"parent" : 278
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 280
+				"parent" : 278
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 280
+				"parent" : 278
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 278
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 278
 			},
 			{
 				"file" : 20
@@ -1741,229 +1741,229 @@
 				"parent" : 287
 			},
 			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 287
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 287
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 287
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 287
+			},
+			{
 				"file" : 21
 			},
 			{
 				"command" : 4,
 				"file" : 21,
-				"line" : 1,
-				"parent" : 294
+				"line" : 7,
+				"parent" : 298
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 30,
-				"parent" : 295
+				"parent" : 299
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 296
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 296
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 296
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 296
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 296
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 296
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 296
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 296
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 296
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 296
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 193,
-				"parent" : 201
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 201
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 201
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 201
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 193,
-				"parent" : 201
+				"parent" : 300
 			},
 			{
 				"file" : 22
@@ -2234,7 +2234,7 @@
 		},
 		{
 			"backtrace" : 78,
-			"id" : "testShonanGaugeFactor.valgrind::@a3211d39a457f634617f"
+			"id" : "testEssentialMatrixFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
 			"backtrace" : 79,
@@ -2350,659 +2350,659 @@
 		},
 		{
 			"backtrace" : 116,
-			"id" : "testGaussianBayesNet.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 117,
-			"id" : "testGaussianBayesTree.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 118,
-			"id" : "testGaussianConditional.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 119,
-			"id" : "testGaussianDensity.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 120,
-			"id" : "testGaussianFactorGraph.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 121,
-			"id" : "testHessianFactor.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 122,
-			"id" : "testJacobianFactor.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 123,
-			"id" : "testKalmanFilter.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 124,
-			"id" : "testNoiseModel.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 125,
-			"id" : "testPowerMethod.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 126,
-			"id" : "testRegularHessianFactor.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 127,
-			"id" : "testRegularJacobianFactor.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 128,
-			"id" : "testSampler.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 129,
-			"id" : "testScatter.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 130,
-			"id" : "testSerializationLinear.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 131,
-			"id" : "testSparseEigen.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 132,
-			"id" : "testVectorValues.valgrind::@08b3615360f1b8d98c18"
-		},
-		{
-			"backtrace" : 136,
-			"id" : "testAdaptAutoDiff.valgrind::@26d09130acb263738d37"
-		},
-		{
-			"backtrace" : 137,
-			"id" : "testCallRecord.valgrind::@26d09130acb263738d37"
-		},
-		{
-			"backtrace" : 138,
-			"id" : "testExecutionTrace.valgrind::@26d09130acb263738d37"
-		},
-		{
-			"backtrace" : 139,
-			"id" : "testExpression.valgrind::@26d09130acb263738d37"
-		},
-		{
-			"backtrace" : 140,
-			"id" : "testFactorTesting.valgrind::@26d09130acb263738d37"
-		},
-		{
-			"backtrace" : 141,
-			"id" : "testFunctorizedFactor.valgrind::@26d09130acb263738d37"
-		},
-		{
-			"backtrace" : 142,
-			"id" : "testLinearContainerFactor.valgrind::@26d09130acb263738d37"
-		},
-		{
-			"backtrace" : 143,
-			"id" : "testSerializationNonlinear.valgrind::@26d09130acb263738d37"
-		},
-		{
-			"backtrace" : 144,
-			"id" : "testUtilities.valgrind::@26d09130acb263738d37"
-		},
-		{
-			"backtrace" : 145,
-			"id" : "testValues.valgrind::@26d09130acb263738d37"
-		},
-		{
-			"backtrace" : 146,
-			"id" : "testWhiteNoiseFactor.valgrind::@26d09130acb263738d37"
-		},
-		{
-			"backtrace" : 150,
-			"id" : "testBearingFactor.valgrind::@7152fc5cd5a23f79d164"
-		},
-		{
-			"backtrace" : 151,
-			"id" : "testBearingRangeFactor.valgrind::@7152fc5cd5a23f79d164"
-		},
-		{
-			"backtrace" : 152,
-			"id" : "testRangeFactor.valgrind::@7152fc5cd5a23f79d164"
-		},
-		{
-			"backtrace" : 153,
-			"id" : "testSerializationSam.valgrind::@7152fc5cd5a23f79d164"
-		},
-		{
-			"backtrace" : 154,
-			"id" : "testBinaryMeasurement.valgrind::@a3211d39a457f634617f"
-		},
-		{
-			"backtrace" : 155,
-			"id" : "testMFAS.valgrind::@a3211d39a457f634617f"
-		},
-		{
-			"backtrace" : 156,
-			"id" : "testSfmData.valgrind::@a3211d39a457f634617f"
-		},
-		{
-			"backtrace" : 157,
-			"id" : "testShonanAveraging.valgrind::@a3211d39a457f634617f"
-		},
-		{
-			"backtrace" : 158,
-			"id" : "testShonanFactor.valgrind::@a3211d39a457f634617f"
-		},
-		{
-			"backtrace" : 159,
-			"id" : "testTranslationFactor.valgrind::@a3211d39a457f634617f"
-		},
-		{
-			"backtrace" : 163,
-			"id" : "testAntiFactor.valgrind::@cc0cb394f4e6915350b5"
-		},
-		{
-			"backtrace" : 164,
-			"id" : "testBetweenFactor.valgrind::@cc0cb394f4e6915350b5"
-		},
-		{
-			"backtrace" : 165,
-			"id" : "testDataset.valgrind::@cc0cb394f4e6915350b5"
-		},
-		{
-			"backtrace" : 166,
-			"id" : "testEssentialMatrixConstraint.valgrind::@cc0cb394f4e6915350b5"
-		},
-		{
-			"backtrace" : 167,
-			"id" : "testEssentialMatrixFactor.valgrind::@cc0cb394f4e6915350b5"
-		},
-		{
-			"backtrace" : 168,
 			"id" : "testFrobeniusFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 169,
+			"backtrace" : 117,
 			"id" : "testGeneralSFMFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 170,
+			"backtrace" : 118,
 			"id" : "testGeneralSFMFactor_Cal3Bundler.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 171,
+			"backtrace" : 119,
 			"id" : "testInitializePose.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 172,
+			"backtrace" : 120,
 			"id" : "testInitializePose3.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 173,
+			"backtrace" : 121,
 			"id" : "testKarcherMeanFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 174,
+			"backtrace" : 122,
 			"id" : "testLago.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 175,
+			"backtrace" : 123,
 			"id" : "testOrientedPlane3Factor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 176,
+			"backtrace" : 124,
 			"id" : "testPoseRotationPrior.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 177,
+			"backtrace" : 125,
 			"id" : "testPoseTranslationPrior.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 178,
+			"backtrace" : 126,
 			"id" : "testPriorFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 179,
+			"backtrace" : 127,
 			"id" : "testProjectionFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 180,
+			"backtrace" : 128,
 			"id" : "testReferenceFrameFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 181,
+			"backtrace" : 129,
 			"id" : "testRegularImplicitSchurFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 182,
+			"backtrace" : 130,
 			"id" : "testRotateFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 183,
+			"backtrace" : 131,
 			"id" : "testSerializationDataset.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 184,
+			"backtrace" : 132,
 			"id" : "testSerializationInSlam.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 185,
+			"backtrace" : 133,
 			"id" : "testSlamExpressions.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 186,
+			"backtrace" : 134,
 			"id" : "testSmartFactorBase.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 187,
+			"backtrace" : 135,
 			"id" : "testSmartProjectionFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 188,
+			"backtrace" : 136,
 			"id" : "testSmartProjectionPoseFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 189,
+			"backtrace" : 137,
 			"id" : "testSmartProjectionRigFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 190,
+			"backtrace" : 138,
 			"id" : "testStereoFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 191,
+			"backtrace" : 139,
 			"id" : "testTriangulationFactor.valgrind::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 195,
+			"backtrace" : 143,
 			"id" : "testAHRSFactor.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 196,
+			"backtrace" : 144,
 			"id" : "testAttitudeFactor.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 197,
+			"backtrace" : 145,
 			"id" : "testBarometricFactor.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 198,
+			"backtrace" : 146,
 			"id" : "testCombinedImuFactor.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 202,
-			"id" : "testInvDepthFactorVariant3.valgrind::@a3c6e10d2951e7b13712"
-		},
-		{
-			"backtrace" : 203,
-			"id" : "testInvDepthFactorVariant2.valgrind::@a3c6e10d2951e7b13712"
-		},
-		{
-			"backtrace" : 204,
-			"id" : "testLocalOrientedPlane3Factor.valgrind::@a3c6e10d2951e7b13712"
-		},
-		{
-			"backtrace" : 205,
-			"id" : "testMultiProjectionFactor.valgrind::@a3c6e10d2951e7b13712"
-		},
-		{
-			"backtrace" : 206,
-			"id" : "testOccupancyGrid.valgrind::@a3c6e10d2951e7b13712"
-		},
-		{
-			"backtrace" : 207,
-			"id" : "testPartialPriorFactor.valgrind::@a3c6e10d2951e7b13712"
-		},
-		{
-			"backtrace" : 208,
-			"id" : "testImuBias.valgrind::@756fa13f111cabb19eac"
-		},
-		{
-			"backtrace" : 209,
+			"backtrace" : 147,
 			"id" : "testConstantVelocityFactor.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 210,
+			"backtrace" : 148,
+			"id" : "testImuBias.valgrind::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 149,
 			"id" : "testImuFactor.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 211,
+			"backtrace" : 150,
 			"id" : "testMagPoseFactor.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 212,
+			"backtrace" : 151,
 			"id" : "testManifoldPreintegration.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 213,
+			"backtrace" : 152,
 			"id" : "testNavExpressions.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 214,
+			"backtrace" : 153,
 			"id" : "testNavState.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 215,
+			"backtrace" : 154,
 			"id" : "testPoseVelocityBias.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 216,
+			"backtrace" : 155,
 			"id" : "testScenario.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 217,
+			"backtrace" : 156,
 			"id" : "testScenarioRunner.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 218,
+			"backtrace" : 157,
 			"id" : "testSerializationNavigation.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 219,
+			"backtrace" : 158,
 			"id" : "testTangentPreintegration.valgrind::@756fa13f111cabb19eac"
 		},
 		{
-			"backtrace" : 223,
+			"backtrace" : 162,
 			"id" : "testBoundingConstraint.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 224,
+			"backtrace" : 163,
 			"id" : "testDoglegOptimizer.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 225,
+			"backtrace" : 164,
 			"id" : "testExpressionFactor.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 226,
+			"backtrace" : 165,
 			"id" : "testExtendedKalmanFilter.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 227,
+			"backtrace" : 166,
 			"id" : "testGaussianBayesTreeB.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 228,
+			"backtrace" : 167,
 			"id" : "testGaussianFactorGraphB.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 229,
+			"backtrace" : 168,
 			"id" : "testGaussianISAM.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 230,
+			"backtrace" : 169,
 			"id" : "testGaussianISAM2.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 231,
+			"backtrace" : 170,
 			"id" : "testGaussianJunctionTreeB.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 232,
+			"backtrace" : 171,
 			"id" : "testGeneralSFMFactorB.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 233,
+			"backtrace" : 172,
 			"id" : "testGncOptimizer.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 234,
+			"backtrace" : 173,
 			"id" : "testGradientDescentOptimizer.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 235,
+			"backtrace" : 174,
 			"id" : "testGraph.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 236,
+			"backtrace" : 175,
 			"id" : "testImuPreintegration.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 237,
+			"backtrace" : 176,
 			"id" : "testIterative.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 238,
+			"backtrace" : 177,
 			"id" : "testLie.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 239,
+			"backtrace" : 178,
 			"id" : "testManifold.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 240,
+			"backtrace" : 179,
 			"id" : "testMarginals.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 241,
+			"backtrace" : 180,
 			"id" : "testNonlinearEquality.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 242,
+			"backtrace" : 181,
 			"id" : "testNonlinearFactor.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 243,
+			"backtrace" : 182,
 			"id" : "testNonlinearFactorGraph.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 244,
+			"backtrace" : 183,
 			"id" : "testNonlinearISAM.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 245,
+			"backtrace" : 184,
 			"id" : "testNonlinearOptimizer.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 246,
+			"backtrace" : 185,
+			"id" : "testGaussianBayesTree.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 186,
+			"id" : "testGaussianBayesNet.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 187,
+			"id" : "testGaussianConditional.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 188,
+			"id" : "testGaussianDensity.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 189,
+			"id" : "testGaussianFactorGraph.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 190,
+			"id" : "testHessianFactor.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 191,
+			"id" : "testJacobianFactor.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 192,
+			"id" : "testKalmanFilter.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 193,
+			"id" : "testNoiseModel.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 194,
+			"id" : "testPowerMethod.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 195,
+			"id" : "testRegularHessianFactor.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 196,
+			"id" : "testRegularJacobianFactor.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 197,
+			"id" : "testSampler.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 198,
+			"id" : "testScatter.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 199,
+			"id" : "testSerializationLinear.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 200,
+			"id" : "testSparseEigen.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 201,
+			"id" : "testVectorValues.valgrind::@08b3615360f1b8d98c18"
+		},
+		{
+			"backtrace" : 205,
+			"id" : "testAdaptAutoDiff.valgrind::@26d09130acb263738d37"
+		},
+		{
+			"backtrace" : 206,
+			"id" : "testCallRecord.valgrind::@26d09130acb263738d37"
+		},
+		{
+			"backtrace" : 207,
+			"id" : "testExecutionTrace.valgrind::@26d09130acb263738d37"
+		},
+		{
+			"backtrace" : 208,
+			"id" : "testExpression.valgrind::@26d09130acb263738d37"
+		},
+		{
+			"backtrace" : 209,
+			"id" : "testFactorTesting.valgrind::@26d09130acb263738d37"
+		},
+		{
+			"backtrace" : 210,
+			"id" : "testFunctorizedFactor.valgrind::@26d09130acb263738d37"
+		},
+		{
+			"backtrace" : 211,
+			"id" : "testLinearContainerFactor.valgrind::@26d09130acb263738d37"
+		},
+		{
+			"backtrace" : 212,
+			"id" : "testSerializationNonlinear.valgrind::@26d09130acb263738d37"
+		},
+		{
+			"backtrace" : 213,
+			"id" : "testUtilities.valgrind::@26d09130acb263738d37"
+		},
+		{
+			"backtrace" : 214,
+			"id" : "testValues.valgrind::@26d09130acb263738d37"
+		},
+		{
+			"backtrace" : 215,
+			"id" : "testWhiteNoiseFactor.valgrind::@26d09130acb263738d37"
+		},
+		{
+			"backtrace" : 219,
+			"id" : "testBearingFactor.valgrind::@7152fc5cd5a23f79d164"
+		},
+		{
+			"backtrace" : 220,
+			"id" : "testBearingRangeFactor.valgrind::@7152fc5cd5a23f79d164"
+		},
+		{
+			"backtrace" : 221,
+			"id" : "testRangeFactor.valgrind::@7152fc5cd5a23f79d164"
+		},
+		{
+			"backtrace" : 222,
+			"id" : "testSerializationSam.valgrind::@7152fc5cd5a23f79d164"
+		},
+		{
+			"backtrace" : 226,
+			"id" : "testBinaryMeasurement.valgrind::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 227,
+			"id" : "testMFAS.valgrind::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 228,
+			"id" : "testSfmData.valgrind::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 229,
+			"id" : "testShonanAveraging.valgrind::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 230,
+			"id" : "testShonanFactor.valgrind::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 231,
+			"id" : "testShonanGaugeFactor.valgrind::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 232,
+			"id" : "testTranslationFactor.valgrind::@a3211d39a457f634617f"
+		},
+		{
+			"backtrace" : 233,
+			"id" : "testAntiFactor.valgrind::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 234,
+			"id" : "testBetweenFactor.valgrind::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 235,
+			"id" : "testDataset.valgrind::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 236,
+			"id" : "testEssentialMatrixConstraint.valgrind::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 237,
 			"id" : "testPCGSolver.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 247,
-			"id" : "testPreconditioner.valgrind::@77e8dc809077bf0c1f89"
-		},
-		{
-			"backtrace" : 248,
+			"backtrace" : 238,
 			"id" : "testRot3Optimization.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 249,
+			"backtrace" : 239,
+			"id" : "testPreconditioner.valgrind::@77e8dc809077bf0c1f89"
+		},
+		{
+			"backtrace" : 240,
 			"id" : "testSerializationSlam.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 250,
+			"backtrace" : 241,
 			"id" : "testSimulated2D.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 251,
+			"backtrace" : 242,
 			"id" : "testSimulated2DOriented.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 252,
+			"backtrace" : 243,
 			"id" : "testSimulated3D.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 253,
+			"backtrace" : 244,
 			"id" : "testSubgraphPreconditioner.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 254,
+			"backtrace" : 245,
 			"id" : "testSubgraphSolver.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 255,
+			"backtrace" : 246,
 			"id" : "testTranslationRecovery.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 256,
+			"backtrace" : 247,
 			"id" : "testVisualISAM2.valgrind::@77e8dc809077bf0c1f89"
 		},
 		{
-			"backtrace" : 260,
+			"backtrace" : 251,
 			"id" : "testBTree.valgrind::@b50a15b912fec24617e2"
 		},
 		{
-			"backtrace" : 261,
+			"backtrace" : 252,
 			"id" : "testDSF.valgrind::@b50a15b912fec24617e2"
 		},
 		{
-			"backtrace" : 262,
+			"backtrace" : 253,
 			"id" : "testFixedVector.valgrind::@b50a15b912fec24617e2"
 		},
 		{
-			"backtrace" : 266,
+			"backtrace" : 257,
 			"id" : "testBearingS2.valgrind::@b6480946f6c44cedd92d"
 		},
 		{
-			"backtrace" : 267,
+			"backtrace" : 258,
 			"id" : "testEvent.valgrind::@b6480946f6c44cedd92d"
 		},
 		{
-			"backtrace" : 268,
+			"backtrace" : 259,
 			"id" : "testInvDepthCamera3.valgrind::@b6480946f6c44cedd92d"
 		},
 		{
-			"backtrace" : 269,
+			"backtrace" : 260,
 			"id" : "testPose3Upright.valgrind::@b6480946f6c44cedd92d"
 		},
 		{
-			"backtrace" : 270,
+			"backtrace" : 261,
 			"id" : "testSimPolygon2D.valgrind::@b6480946f6c44cedd92d"
 		},
 		{
-			"backtrace" : 271,
+			"backtrace" : 262,
 			"id" : "testSimWall2D.valgrind::@b6480946f6c44cedd92d"
 		},
 		{
-			"backtrace" : 275,
+			"backtrace" : 266,
 			"id" : "testLPSolver.valgrind::@3bf894d1e7dbb4eac7b8"
 		},
 		{
-			"backtrace" : 276,
+			"backtrace" : 267,
 			"id" : "testLinearEquality.valgrind::@3bf894d1e7dbb4eac7b8"
 		},
 		{
-			"backtrace" : 277,
+			"backtrace" : 268,
 			"id" : "testQPSolver.valgrind::@3bf894d1e7dbb4eac7b8"
 		},
 		{
-			"backtrace" : 281,
+			"backtrace" : 272,
 			"id" : "testCSP.valgrind::@38b167e385675845ca49"
 		},
 		{
-			"backtrace" : 282,
+			"backtrace" : 273,
 			"id" : "testLoopyBelief.valgrind::@38b167e385675845ca49"
 		},
 		{
-			"backtrace" : 283,
+			"backtrace" : 274,
 			"id" : "testScheduler.valgrind::@38b167e385675845ca49"
 		},
 		{
-			"backtrace" : 284,
+			"backtrace" : 275,
 			"id" : "testSudoku.valgrind::@38b167e385675845ca49"
 		},
 		{
-			"backtrace" : 288,
+			"backtrace" : 279,
 			"id" : "testIMUSystem.valgrind::@c7c35e6bdb384006c2ed"
 		},
 		{
-			"backtrace" : 289,
+			"backtrace" : 280,
 			"id" : "testPendulumFactors.valgrind::@c7c35e6bdb384006c2ed"
 		},
 		{
-			"backtrace" : 290,
+			"backtrace" : 281,
 			"id" : "testPoseRTV.valgrind::@c7c35e6bdb384006c2ed"
 		},
 		{
-			"backtrace" : 291,
+			"backtrace" : 282,
 			"id" : "testSimpleHelicopter.valgrind::@c7c35e6bdb384006c2ed"
 		},
 		{
-			"backtrace" : 292,
+			"backtrace" : 283,
 			"id" : "testVelocityConstraint.valgrind::@c7c35e6bdb384006c2ed"
 		},
 		{
-			"backtrace" : 293,
+			"backtrace" : 284,
 			"id" : "testVelocityConstraint3.valgrind::@c7c35e6bdb384006c2ed"
 		},
 		{
-			"backtrace" : 297,
+			"backtrace" : 288,
 			"id" : "testBatchFixedLagSmoother.valgrind::@02230388667b5d15be68"
 		},
 		{
-			"backtrace" : 298,
+			"backtrace" : 289,
 			"id" : "testConcurrentBatchFilter.valgrind::@02230388667b5d15be68"
 		},
 		{
-			"backtrace" : 299,
+			"backtrace" : 290,
 			"id" : "testConcurrentBatchSmoother.valgrind::@02230388667b5d15be68"
 		},
 		{
-			"backtrace" : 300,
+			"backtrace" : 291,
 			"id" : "testConcurrentIncrementalFilter.valgrind::@02230388667b5d15be68"
 		},
 		{
-			"backtrace" : 301,
+			"backtrace" : 292,
 			"id" : "testConcurrentIncrementalSmootherDL.valgrind::@02230388667b5d15be68"
 		},
 		{
-			"backtrace" : 302,
+			"backtrace" : 293,
 			"id" : "testConcurrentIncrementalSmootherGN.valgrind::@02230388667b5d15be68"
 		},
 		{
-			"backtrace" : 303,
+			"backtrace" : 294,
 			"id" : "testIncrementalFixedLagSmoother.valgrind::@02230388667b5d15be68"
 		},
 		{
-			"backtrace" : 304,
+			"backtrace" : 295,
 			"id" : "testLinearizedFactor.valgrind::@02230388667b5d15be68"
 		},
 		{
-			"backtrace" : 305,
+			"backtrace" : 296,
 			"id" : "testNonlinearClusterTree.valgrind::@02230388667b5d15be68"
 		},
 		{
-			"backtrace" : 306,
+			"backtrace" : 297,
 			"id" : "testParticleFactor.valgrind::@02230388667b5d15be68"
 		},
 		{
-			"backtrace" : 307,
+			"backtrace" : 301,
 			"id" : "testAHRS.valgrind::@a3c6e10d2951e7b13712"
 		},
 		{
-			"backtrace" : 308,
+			"backtrace" : 302,
 			"id" : "testBetweenFactorEM.valgrind::@a3c6e10d2951e7b13712"
 		},
 		{
-			"backtrace" : 309,
+			"backtrace" : 303,
 			"id" : "testBiasedGPSFactor.valgrind::@a3c6e10d2951e7b13712"
 		},
 		{
-			"backtrace" : 310,
+			"backtrace" : 304,
 			"id" : "testDummyFactor.valgrind::@a3c6e10d2951e7b13712"
 		},
 		{
-			"backtrace" : 311,
+			"backtrace" : 305,
 			"id" : "testEquivInertialNavFactor_GlobalVel.valgrind::@a3c6e10d2951e7b13712"
 		},
 		{
-			"backtrace" : 312,
+			"backtrace" : 306,
 			"id" : "testGaussMarkov1stOrderFactor.valgrind::@a3c6e10d2951e7b13712"
 		},
 		{
-			"backtrace" : 313,
+			"backtrace" : 307,
 			"id" : "testInertialNavFactor_GlobalVelocity.valgrind::@a3c6e10d2951e7b13712"
 		},
 		{
-			"backtrace" : 314,
+			"backtrace" : 308,
 			"id" : "testInvDepthFactor3.valgrind::@a3c6e10d2951e7b13712"
 		},
 		{
-			"backtrace" : 315,
+			"backtrace" : 309,
 			"id" : "testInvDepthFactorVariant1.valgrind::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 310,
+			"id" : "testInvDepthFactorVariant2.valgrind::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 311,
+			"id" : "testInvDepthFactorVariant3.valgrind::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 312,
+			"id" : "testLocalOrientedPlane3Factor.valgrind::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 313,
+			"id" : "testMultiProjectionFactor.valgrind::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 314,
+			"id" : "testOccupancyGrid.valgrind::@a3c6e10d2951e7b13712"
+		},
+		{
+			"backtrace" : 315,
+			"id" : "testPartialPriorFactor.valgrind::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 316,

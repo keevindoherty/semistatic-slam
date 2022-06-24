@@ -12,7 +12,7 @@
 		"files" : 
 		[
 			"lib/gtsam/cmake/GtsamTesting.cmake",
-			"lib/gtsam/tests/CMakeLists.txt"
+			"lib/gtsam/gtsam_unstable/slam/tests/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -22,7 +22,7 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 11,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
@@ -222,24 +222,6 @@
 				"file" : 0,
 				"line" : 177,
 				"parent" : 2
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 177,
-				"parent" : 2
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 177,
-				"parent" : 2
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 177,
-				"parent" : 2
 			}
 		]
 	},
@@ -247,151 +229,139 @@
 	[
 		{
 			"backtrace" : 4,
-			"id" : "testBoundingConstraint::@77e8dc809077bf0c1f89"
+			"id" : "testAHRS::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 5,
-			"id" : "testDoglegOptimizer::@77e8dc809077bf0c1f89"
+			"id" : "testBetweenFactorEM::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 6,
-			"id" : "testExpressionFactor::@77e8dc809077bf0c1f89"
+			"id" : "testBiasedGPSFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 7,
-			"id" : "testExtendedKalmanFilter::@77e8dc809077bf0c1f89"
+			"id" : "testDummyFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 8,
-			"id" : "testGaussianBayesTreeB::@77e8dc809077bf0c1f89"
+			"id" : "testEquivInertialNavFactor_GlobalVel::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 9,
-			"id" : "testGaussianFactorGraphB::@77e8dc809077bf0c1f89"
+			"id" : "testGaussMarkov1stOrderFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 10,
-			"id" : "testGaussianISAM::@77e8dc809077bf0c1f89"
+			"id" : "testInertialNavFactor_GlobalVelocity::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 11,
-			"id" : "testGaussianISAM2::@77e8dc809077bf0c1f89"
+			"id" : "testInvDepthFactor3::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 12,
-			"id" : "testGaussianJunctionTreeB::@77e8dc809077bf0c1f89"
+			"id" : "testInvDepthFactorVariant1::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 13,
-			"id" : "testGeneralSFMFactorB::@77e8dc809077bf0c1f89"
+			"id" : "testInvDepthFactorVariant2::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 14,
-			"id" : "testGncOptimizer::@77e8dc809077bf0c1f89"
+			"id" : "testInvDepthFactorVariant3::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 15,
-			"id" : "testGradientDescentOptimizer::@77e8dc809077bf0c1f89"
+			"id" : "testLocalOrientedPlane3Factor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 16,
-			"id" : "testGraph::@77e8dc809077bf0c1f89"
+			"id" : "testMultiProjectionFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 17,
-			"id" : "testImuPreintegration::@77e8dc809077bf0c1f89"
+			"id" : "testOccupancyGrid::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 18,
-			"id" : "testIterative::@77e8dc809077bf0c1f89"
+			"id" : "testPartialPriorFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 19,
-			"id" : "testLie::@77e8dc809077bf0c1f89"
+			"id" : "testPoseBetweenFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 20,
-			"id" : "testManifold::@77e8dc809077bf0c1f89"
+			"id" : "testPosePriorFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 21,
-			"id" : "testMarginals::@77e8dc809077bf0c1f89"
+			"id" : "testPoseToPointFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 22,
-			"id" : "testNonlinearEquality::@77e8dc809077bf0c1f89"
+			"id" : "testProjectionFactorPPP::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 23,
-			"id" : "testNonlinearFactor::@77e8dc809077bf0c1f89"
+			"id" : "testProjectionFactorPPPC::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 24,
-			"id" : "testNonlinearFactorGraph::@77e8dc809077bf0c1f89"
+			"id" : "testProjectionFactorRollingShutter::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 25,
-			"id" : "testNonlinearISAM::@77e8dc809077bf0c1f89"
+			"id" : "testRelativeElevationFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 26,
-			"id" : "testNonlinearOptimizer::@77e8dc809077bf0c1f89"
+			"id" : "testSmartProjectionPoseFactorRollingShutter::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 27,
-			"id" : "testPCGSolver::@77e8dc809077bf0c1f89"
+			"id" : "testSmartRangeFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 28,
-			"id" : "testPreconditioner::@77e8dc809077bf0c1f89"
+			"id" : "testSmartStereoFactor_iSAM2::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 29,
-			"id" : "testRot3Optimization::@77e8dc809077bf0c1f89"
+			"id" : "testSmartStereoProjectionFactorPP::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 30,
-			"id" : "testSerializationSlam::@77e8dc809077bf0c1f89"
+			"id" : "testSmartStereoProjectionPoseFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 31,
-			"id" : "testSimulated2D::@77e8dc809077bf0c1f89"
+			"id" : "testTOAFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 32,
-			"id" : "testSimulated2DOriented::@77e8dc809077bf0c1f89"
+			"id" : "testTSAMFactors::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 33,
-			"id" : "testSimulated3D::@77e8dc809077bf0c1f89"
+			"id" : "testTransformBtwRobotsUnaryFactor::@a3c6e10d2951e7b13712"
 		},
 		{
 			"backtrace" : 34,
-			"id" : "testSubgraphPreconditioner::@77e8dc809077bf0c1f89"
-		},
-		{
-			"backtrace" : 35,
-			"id" : "testSubgraphSolver::@77e8dc809077bf0c1f89"
-		},
-		{
-			"backtrace" : 36,
-			"id" : "testTranslationRecovery::@77e8dc809077bf0c1f89"
-		},
-		{
-			"backtrace" : 37,
-			"id" : "testVisualISAM2::@77e8dc809077bf0c1f89"
+			"id" : "testTransformBtwRobotsUnaryFactorEM::@a3c6e10d2951e7b13712"
 		}
 	],
 	"folder" : 
 	{
 		"name" : "Unit tests"
 	},
-	"id" : "check.tests::@77e8dc809077bf0c1f89",
-	"name" : "check.tests",
+	"id" : "check.slam_unstable::@a3c6e10d2951e7b13712",
+	"name" : "check.slam_unstable",
 	"paths" : 
 	{
-		"build" : "lib/gtsam/tests",
-		"source" : "lib/gtsam/tests"
+		"build" : "lib/gtsam/gtsam_unstable/slam/tests",
+		"source" : "lib/gtsam/gtsam_unstable/slam/tests"
 	},
 	"sourceGroups" : 
 	[
@@ -415,13 +385,13 @@
 		{
 			"backtrace" : 3,
 			"isGenerated" : true,
-			"path" : "build/lib/gtsam/tests/CMakeFiles/check.tests",
+			"path" : "build/lib/gtsam/gtsam_unstable/slam/tests/CMakeFiles/check.slam_unstable",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/lib/gtsam/tests/CMakeFiles/check.tests.rule",
+			"path" : "build/lib/gtsam/gtsam_unstable/slam/tests/CMakeFiles/check.slam_unstable.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

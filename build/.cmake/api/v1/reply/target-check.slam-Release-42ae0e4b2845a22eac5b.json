@@ -217,119 +217,119 @@
 	[
 		{
 			"backtrace" : 4,
-			"id" : "testAntiFactor::@cc0cb394f4e6915350b5"
-		},
-		{
-			"backtrace" : 5,
-			"id" : "testBetweenFactor::@cc0cb394f4e6915350b5"
-		},
-		{
-			"backtrace" : 6,
-			"id" : "testDataset::@cc0cb394f4e6915350b5"
-		},
-		{
-			"backtrace" : 7,
-			"id" : "testEssentialMatrixConstraint::@cc0cb394f4e6915350b5"
-		},
-		{
-			"backtrace" : 8,
-			"id" : "testEssentialMatrixFactor::@cc0cb394f4e6915350b5"
-		},
-		{
-			"backtrace" : 9,
 			"id" : "testFrobeniusFactor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 10,
+			"backtrace" : 5,
 			"id" : "testGeneralSFMFactor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 11,
+			"backtrace" : 6,
 			"id" : "testGeneralSFMFactor_Cal3Bundler::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 12,
+			"backtrace" : 7,
 			"id" : "testInitializePose::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 13,
+			"backtrace" : 8,
 			"id" : "testInitializePose3::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 14,
+			"backtrace" : 9,
 			"id" : "testKarcherMeanFactor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 15,
+			"backtrace" : 10,
 			"id" : "testLago::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 16,
+			"backtrace" : 11,
 			"id" : "testOrientedPlane3Factor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 17,
+			"backtrace" : 12,
 			"id" : "testPoseRotationPrior::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 18,
+			"backtrace" : 13,
 			"id" : "testPoseTranslationPrior::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 19,
+			"backtrace" : 14,
 			"id" : "testPriorFactor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 20,
+			"backtrace" : 15,
 			"id" : "testProjectionFactor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 21,
+			"backtrace" : 16,
 			"id" : "testReferenceFrameFactor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 22,
+			"backtrace" : 17,
 			"id" : "testRegularImplicitSchurFactor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 23,
+			"backtrace" : 18,
 			"id" : "testRotateFactor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 24,
+			"backtrace" : 19,
 			"id" : "testSerializationDataset::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 20,
 			"id" : "testSerializationInSlam::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 26,
+			"backtrace" : 21,
 			"id" : "testSlamExpressions::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 27,
+			"backtrace" : 22,
 			"id" : "testSmartFactorBase::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 28,
+			"backtrace" : 23,
 			"id" : "testSmartProjectionFactor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 29,
+			"backtrace" : 24,
 			"id" : "testSmartProjectionPoseFactor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 30,
+			"backtrace" : 25,
 			"id" : "testSmartProjectionRigFactor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 31,
+			"backtrace" : 26,
 			"id" : "testStereoFactor::@cc0cb394f4e6915350b5"
 		},
 		{
-			"backtrace" : 32,
+			"backtrace" : 27,
 			"id" : "testTriangulationFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "testAntiFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 29,
+			"id" : "testBetweenFactor::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "testDataset::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "testEssentialMatrixConstraint::@cc0cb394f4e6915350b5"
+		},
+		{
+			"backtrace" : 32,
+			"id" : "testEssentialMatrixFactor::@cc0cb394f4e6915350b5"
 		}
 	],
 	"folder" : 

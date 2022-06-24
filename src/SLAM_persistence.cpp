@@ -17,6 +17,7 @@
 #include <persistence_filter/c++/include/persistence_filter.h>
 #include <persistence_filter/c++/include/persistence_filter_utils.h>
 #include <matplotlibcpp.h>
+#include <math.h>
 
 /*TODOS:
 - Fix false positive RNG position generation (has to be to right of robot)
@@ -100,6 +101,9 @@ int current_pose_index = 0;
 
 int past_pose_index = 0;
 int past_landmark_number = 0;
+
+double plot_x = {};
+double plot_y = {};
 
 void initializeTimes(){
   for (int i = 0; i < max_num_landmarks; i++){
@@ -216,6 +220,20 @@ gtsam::KeyVector all_but_one(Key key, const gtsam::GaussianFactorGraph& graph){
     ret.push_back(key);
   }
   return ret;
+}
+
+Vector3 estimate_from_odom(Vector3 past_pos, Vector3 odometry){
+   return Vector3(past_pos.x()+odometry.x(), past_pos.y()+odometry.y(), past_pos.z()+odometry.z());
+}
+
+// delta y /delta x = tan(bearing), sin/cos = tan(bearing)
+// sin^2+cos^2 = 1, cos^2(1+tan(bearing)^2) = 1, cos = 1/sqrt(1+tan(bearing)^2)
+// sin = tan(bearing)/sqrt(1+tan(bearing)^2)
+// diff = (cos*range, sin*range, 0)
+
+Vector3 estimate_from_range(Vector3 past_pos, double range, double bearing){
+  Vector3 diff(1/sqrt(1 + pow(tan(bearing),2))*range,tan(bearing)/sqrt(1 + pow(tan(bearing),2))*range,0);
+  return Vector3(past_pos.x()+diff.x(), past_pos.y()+diff.y(), past_pos.z()+diff.z());
 }
 
 void marginalize(const gtsam::Key &key, gtsam::NonlinearFactorGraph& graph, const gtsam::Values &linearization_point) {

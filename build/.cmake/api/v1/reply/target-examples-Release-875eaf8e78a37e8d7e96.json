@@ -355,37 +355,43 @@
 				"parent" : 6
 			},
 			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
 				"file" : 3
 			},
 			{
 				"command" : 4,
 				"file" : 3,
 				"line" : 5,
-				"parent" : 57
+				"parent" : 58
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 55,
-				"parent" : 58
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 293,
 				"parent" : 59
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 293,
-				"parent" : 59
+				"parent" : 60
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 293,
-				"parent" : 59
+				"parent" : 60
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 60
 			},
 			{
 				"file" : 4
@@ -394,79 +400,73 @@
 				"command" : 4,
 				"file" : 4,
 				"line" : 5,
-				"parent" : 63
+				"parent" : 64
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 55,
-				"parent" : 64
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 293,
 				"parent" : 65
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 293,
-				"parent" : 65
+				"parent" : 66
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 293,
-				"parent" : 65
+				"parent" : 66
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 293,
-				"parent" : 65
+				"parent" : 66
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 293,
-				"parent" : 65
+				"parent" : 66
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 293,
-				"parent" : 65
+				"parent" : 66
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 293,
-				"parent" : 65
+				"parent" : 66
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 293,
-				"parent" : 65
+				"parent" : 66
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 293,
-				"parent" : 65
+				"parent" : 66
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 293,
-				"parent" : 65
+				"parent" : 66
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 293,
-				"parent" : 6
+				"parent" : 66
 			}
 		]
 	},
@@ -474,259 +474,259 @@
 	[
 		{
 			"backtrace" : 7,
-			"id" : "Pose3SLAMExample_changeKeys::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 8,
-			"id" : "Pose3SLAMExample_g2o::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 9,
-			"id" : "Pose3SLAMExample_initializePose3Chordal::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 10,
-			"id" : "Pose3SLAMExample_initializePose3Gradient::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 11,
-			"id" : "RangeISAMExample_plaza2::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 12,
-			"id" : "SFMExample::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 13,
-			"id" : "SFMExampleExpressions::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 14,
-			"id" : "Pose2SLAMExample_lago::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 15,
-			"id" : "Pose2SLAMExample_graph::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 16,
-			"id" : "Pose2SLAMExample_graphviz::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 17,
-			"id" : "Pose2SLAMExample_g2o::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 18,
-			"id" : "Pose2SLAMStressTest::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 19,
-			"id" : "Pose2SLAMwSPCG::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 20,
-			"id" : "Pose3Localization::@52b4988cf8765b0e1f3b"
-		},
-		{
-			"backtrace" : 21,
 			"id" : "CameraResectioning::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 22,
+			"backtrace" : 8,
 			"id" : "CombinedImuFactorsExample::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 23,
+			"backtrace" : 9,
 			"id" : "CreateSFMExampleData::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 24,
+			"backtrace" : 10,
 			"id" : "DiscreteBayesNetExample::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 11,
 			"id" : "DiscreteBayesNet_FG::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 26,
+			"backtrace" : 12,
 			"id" : "FisheyeExample::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 27,
+			"backtrace" : 13,
 			"id" : "FisheyeExample2::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 28,
+			"backtrace" : 14,
 			"id" : "HMMExample::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 29,
+			"backtrace" : 15,
 			"id" : "IMUKittiExampleGPS::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 30,
+			"backtrace" : 16,
 			"id" : "ISAM2Example_SmartFactor::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 31,
+			"backtrace" : 17,
 			"id" : "ImuFactorsExample::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 32,
+			"backtrace" : 18,
 			"id" : "ImuFactorsExample2::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 33,
+			"backtrace" : 19,
 			"id" : "InverseKinematicsExampleExpressions::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 34,
+			"backtrace" : 20,
 			"id" : "LocalizationExample::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 35,
+			"backtrace" : 21,
 			"id" : "METISOrderingExample::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 36,
+			"backtrace" : 22,
 			"id" : "OdometryExample::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 37,
+			"backtrace" : 23,
 			"id" : "PlanarSLAMExample::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 38,
+			"backtrace" : 24,
 			"id" : "Pose2SLAMExample::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 39,
+			"backtrace" : 25,
 			"id" : "Pose2SLAMExampleExpressions::@52b4988cf8765b0e1f3b"
 		},
 		{
+			"backtrace" : 26,
+			"id" : "Pose2SLAMExample_g2o::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "Pose2SLAMExample_graph::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "Pose2SLAMExample_graphviz::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 29,
+			"id" : "Pose2SLAMExample_lago::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "Pose2SLAMStressTest::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "Pose2SLAMwSPCG::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 32,
+			"id" : "Pose3Localization::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 33,
+			"id" : "Pose3SLAMExampleExpressions_BearingRangeWithTransform::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 34,
+			"id" : "Pose3SLAMExample_changeKeys::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 35,
+			"id" : "Pose3SLAMExample_g2o::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 36,
+			"id" : "Pose3SLAMExample_initializePose3Chordal::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 37,
+			"id" : "Pose3SLAMExample_initializePose3Gradient::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 38,
+			"id" : "RangeISAMExample_plaza2::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 39,
+			"id" : "SFMExample::@52b4988cf8765b0e1f3b"
+		},
+		{
 			"backtrace" : 40,
-			"id" : "SFMExampleExpressions_bal::@52b4988cf8765b0e1f3b"
+			"id" : "SFMExampleExpressions::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 41,
-			"id" : "SFMExample_SmartFactor::@52b4988cf8765b0e1f3b"
+			"id" : "SFMExampleExpressions_bal::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 42,
-			"id" : "SFMExample_SmartFactorPCG::@52b4988cf8765b0e1f3b"
+			"id" : "SFMExample_SmartFactor::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 43,
-			"id" : "SFMExample_bal::@52b4988cf8765b0e1f3b"
+			"id" : "SFMExample_SmartFactorPCG::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 44,
-			"id" : "SFMExample_bal_COLAMD_METIS::@52b4988cf8765b0e1f3b"
+			"id" : "SFMExample_bal::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 45,
-			"id" : "SelfCalibrationExample::@52b4988cf8765b0e1f3b"
+			"id" : "SFMExample_bal_COLAMD_METIS::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 46,
-			"id" : "ShonanAveragingCLI::@52b4988cf8765b0e1f3b"
+			"id" : "SelfCalibrationExample::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 47,
-			"id" : "SimpleRotation::@52b4988cf8765b0e1f3b"
+			"id" : "ShonanAveragingCLI::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 48,
-			"id" : "SolverComparer::@52b4988cf8765b0e1f3b"
+			"id" : "SimpleRotation::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 49,
-			"id" : "StereoVOExample::@52b4988cf8765b0e1f3b"
+			"id" : "SolverComparer::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 50,
-			"id" : "StereoVOExample_large::@52b4988cf8765b0e1f3b"
+			"id" : "StereoVOExample::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 51,
-			"id" : "TimeTBB::@52b4988cf8765b0e1f3b"
+			"id" : "StereoVOExample_large::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 52,
-			"id" : "UGM_chain::@52b4988cf8765b0e1f3b"
+			"id" : "TimeTBB::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 53,
-			"id" : "UGM_small::@52b4988cf8765b0e1f3b"
+			"id" : "UGM_chain::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 54,
-			"id" : "VisualISAM2Example::@52b4988cf8765b0e1f3b"
+			"id" : "UGM_small::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 55,
-			"id" : "VisualISAMExample::@52b4988cf8765b0e1f3b"
+			"id" : "VisualISAM2Example::@52b4988cf8765b0e1f3b"
 		},
 		{
 			"backtrace" : 56,
+			"id" : "VisualISAMExample::@52b4988cf8765b0e1f3b"
+		},
+		{
+			"backtrace" : 57,
 			"id" : "easyPoint2KalmanFilter::@52b4988cf8765b0e1f3b"
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 61,
 			"id" : "schedulingExample::@cb28b67b91d08a271ce7"
 		},
 		{
-			"backtrace" : 61,
+			"backtrace" : 62,
 			"id" : "schedulingQuals12::@cb28b67b91d08a271ce7"
 		},
 		{
-			"backtrace" : 62,
+			"backtrace" : 63,
 			"id" : "schedulingQuals13::@cb28b67b91d08a271ce7"
 		},
 		{
-			"backtrace" : 66,
+			"backtrace" : 67,
 			"id" : "ConcurrentCalibration::@8132597bcb78c9090ff3"
 		},
 		{
-			"backtrace" : 67,
+			"backtrace" : 68,
 			"id" : "ConcurrentFilteringAndSmoothingExample::@8132597bcb78c9090ff3"
 		},
 		{
-			"backtrace" : 68,
+			"backtrace" : 69,
 			"id" : "FixedLagSmootherExample::@8132597bcb78c9090ff3"
 		},
 		{
-			"backtrace" : 69,
+			"backtrace" : 70,
 			"id" : "GncPoseAveragingExample::@8132597bcb78c9090ff3"
 		},
 		{
-			"backtrace" : 70,
+			"backtrace" : 71,
 			"id" : "ISAM2_SmartFactorStereo_IMU::@8132597bcb78c9090ff3"
 		},
 		{
-			"backtrace" : 71,
+			"backtrace" : 72,
 			"id" : "SmartProjectionFactorExample::@8132597bcb78c9090ff3"
 		},
 		{
-			"backtrace" : 72,
+			"backtrace" : 73,
 			"id" : "SmartRangeExample_plaza1::@8132597bcb78c9090ff3"
 		},
 		{
-			"backtrace" : 73,
+			"backtrace" : 74,
 			"id" : "SmartRangeExample_plaza2::@8132597bcb78c9090ff3"
 		},
 		{
-			"backtrace" : 74,
+			"backtrace" : 75,
 			"id" : "SmartStereoProjectionFactorExample::@8132597bcb78c9090ff3"
 		},
 		{
-			"backtrace" : 75,
-			"id" : "TimeOfArrivalExample::@8132597bcb78c9090ff3"
-		},
-		{
 			"backtrace" : 76,
-			"id" : "Pose3SLAMExampleExpressions_BearingRangeWithTransform::@52b4988cf8765b0e1f3b"
+			"id" : "TimeOfArrivalExample::@8132597bcb78c9090ff3"
 		}
 	],
 	"id" : "examples::@0783fabc0c5c51eea083",
