@@ -29,10 +29,11 @@ class Position{
     PersistenceFilter filter = PersistenceFilter(logS_T);
     double t;
 
-    Position(Symbol s, Vector3 pos, string cat){
-        symbol = s;
-        position = pos;
-        category = cat;
+    Position() {}
+    Position(const Symbol& s, const Vector3& pos, string cat){
+       symbol = s;
+       position = pos;
+       category = cat;
     }
 
     private:
@@ -75,6 +76,8 @@ static double P_M = 0.1;
 static double P_F = 0.1;
 //time counter for the persistence filter
 vector <double> t;
+//Vector of recently updated ground truth symbols (ie landmarks with this symbol are currently set to ground truth position)
+//This vector is cleared every iteration, and landmarks from this iteration are updated
 
 double AddNoise(double stddev, double measurement){
     double mean = 0.0;
@@ -84,27 +87,18 @@ double AddNoise(double stddev, double measurement){
     return measurement+dist(generator);
 }
 
-void AddGroundTruthLandmark(Vector3 pos){
-    landmarks.push_back(Position(Symbol('l',landmarks.size()), pos, "landmark"));
-    ground_truth_landmarks.push_back(Position(Symbol('l',landmarks.size()), pos, "landmark"));
+void AddGroundTruthLandmark(const Vector3& pos){
+    Position p(Symbol('l',landmarks.size()), pos, "landmark");
+    landmarks.push_back(p);
+    ground_truth_landmarks.push_back(p);
 }
 
 void MoveGroundTruthLandmark(Vector3 new_pos, int landmark_no){
     fprintf(stderr, "MoveGroundTruthLandmark not yet defined\n");
 }
 
-gtsam::NonlinearFactorGraph addBearingRangeFactor(int pose_no, int landmark_no, NonlinearFactorGraph graph){
-   fprintf(stderr, "Position: %d, Landmark: %d\n", pose_no, landmark_no);
-   Vector3 feat = landmarks[landmark_no].position;
-   if (feat.x() >= poses[pose_no].position.x()){
-        double angle = atan((feat.y()-poses[pose_no].position.y())/(feat.x()-poses[pose_no].position.x()));
-        Rot2 bearing = Rot2::fromAngle(AddNoise(mNoise.y(), angle));
-        double range = sqrt(pow(feat.y()-poses[pose_no].position.y(), 2.0)+pow(feat.x()-poses[pose_no].position.x(), 2.0));
-        double noisy_range = AddNoise(mNoise.x(), range);
-        fprintf(stderr, "Actually adding landmark\n");
-        graph.emplace_shared<BearingRangeFactor<Pose2, Point2> >(Symbol('x',pose_no), Symbol('l',landmark_no), bearing, noisy_range, measurementNoise);
-   }
-   return graph;
+double Distance(Vector3 v1, Vector3 v2){
+  return sqrt(pow(v1.x()-v2.x(),2.0)+pow(v1.y()-v2.y(),2.0));
 }
 
 bool GroundTruth(Vector3 v){
@@ -168,22 +162,6 @@ int Persistence(int landmark_no){
   }
 }
 
-double Distance(Vector3 v1, Vector3 v2){
-  return sqrt(pow(v1.x()-v2.x(),2.0)+pow(v1.y()-v2.y(),2.0));
-}
-
-bool ground_truth(Vector3 v1){
-  // This method determines if a point is a ground truth landmark 
-  // Assumes any landmark within 0.1 of the ground truth landmark is a ground truth landmark
-  int ground_truth_num_landmarks = ground_truth_landmarks.size();
-  for (int i =0; i < ground_truth_num_landmarks; i++){
-    if (Distance(ground_truth_landmarks[i].position, v1)<0.1){
-      return true;
-    }
-  }
-  return false;
-}
-
 Vector3 estimate_from_odom(Vector3 past_pos, Pose2 odometry){
    return Vector3(past_pos.x()+odometry.x(), past_pos.y()+odometry.y(), past_pos.z());
 }
@@ -191,6 +169,83 @@ Vector3 estimate_from_odom(Vector3 past_pos, Pose2 odometry){
 Vector3 estimate_from_range(Vector3 past_pos, double range, double bearing){
   Vector3 diff(1/sqrt(1 + pow(tan(bearing),2))*range,tan(bearing)/sqrt(1 + pow(tan(bearing),2))*range,0);
   return Vector3(past_pos.x()+diff.x(), past_pos.y()+diff.y(), past_pos.z()+diff.z());
+}
+
+Vector3 addBearingRangeFactor(int pose_no, int landmark_no, NonlinearFactorGraph& graph){
+  //Returns approximate location of landmark from measurement (noisy range and bearing)
+   fprintf(stderr, "Position: %d, Landmark: %d\n", pose_no, landmark_no);
+   Vector3 feat = landmarks[landmark_no].position;
+   if (feat.x() >= poses[pose_no].position.x()){
+        double angle = atan((feat.y()-poses[pose_no].position.y())/(feat.x()-poses[pose_no].position.x()));
+        double noisy_angle = AddNoise(mNoise.y(), angle);
+        Rot2 noisy_bearing = Rot2::fromAngle(AddNoise(mNoise.y(), angle));
+        double range = sqrt(pow(feat.y()-poses[pose_no].position.y(), 2.0)+pow(feat.x()-poses[pose_no].position.x(), 2.0));
+        double noisy_range = AddNoise(mNoise.x(), range);
+        fprintf(stderr, "Actually adding landmark\n");
+        graph.emplace_shared<BearingRangeFactor<Pose2, Point2> >(Symbol('x',pose_no), Symbol('l',landmark_no), noisy_bearing, noisy_range, measurementNoise);
+        return estimate_from_range(poses[pose_no].position, noisy_range, noisy_angle);
+   }
+   else{
+    return Vector3(20.0,20.0,20.0);
+   }
+}
+
+gtsam::KeyVector all_but_one(Key key, const gtsam::GaussianFactorGraph& graph){
+  auto it = graph.begin();
+  set<Key> keys;
+  for (auto factor: graph){
+    for(auto k: factor->keys()){
+      if(k!=key){
+         keys.insert(k);
+      }
+    }
+  }
+  gtsam::KeyVector ret;
+  for(Key key: keys){
+    ret.push_back(key);
+  }
+  return ret;
+}
+
+bool keyInKeyVector(const KeyVector& keys, Key k){
+  //Returns if a key is in the key vector
+  for (auto key: keys){
+    if (k == key){
+      return true;
+    }
+  }
+  return false;
+}
+
+void eraseKeys(const KeyVector& keys, gtsam::NonlinearFactorGraph& graph) {
+  //Modifies graph by erasing keys and any factors connected to the keys
+  auto it = graph.begin();
+  int size = graph.size();
+  for (auto key: keys){
+    int num = 0;
+    for (auto factor: graph){
+      bool a = keyInKeyVector(factor->keys(), key);
+      if(a){
+        graph.erase(it+num);
+      }
+      //TODO: Why is this necessary?
+      if (num == graph.size()-1){
+        break;
+      }
+      num++;
+    }
+  }
+}
+
+void addFactors(const gtsam::GaussianFactorGraph& newFactors, gtsam::NonlinearFactorGraph& graph) {
+  for(const auto& f: newFactors){
+    gtsam::LinearContainerFactor linearContainer(f);
+    gtsam::NonlinearFactorGraph fg = linearContainer.ConvertLinearGraph(newFactors);
+    for(const auto& nlfactor: fg){
+    graph.add(nlfactor);
+    }
+    break;
+  }
 }
 
 void Marginalize(const gtsam::Key &key, gtsam::NonlinearFactorGraph& graph, const gtsam::Values &linearization_point) {
@@ -227,11 +282,23 @@ void Marginalize(const gtsam::Key &key, gtsam::NonlinearFactorGraph& graph, cons
   addFactors(m, graph);
 }
 
-Values OnePass(gtsam::NonlinearFactorGraph graph, int pass_no){
+Values OnePass(gtsam::NonlinearFactorGraph& graph, int pass_no){
   if (pass_no == 0){
+    fprintf(stderr, "Trying to add first pose\n");
     graph.addPrior(Symbol('x',0), Vector3(0,0,0), priorNoise);  // add directly to graph
+    fprintf(stderr, "line 1\n");
+    // Position p(Symbol('x', 0), Vector3(0.0,0.0,0.0), "pose");
+    Symbol s('x', 0);
+    fprintf(stderr, "line 1-1\n");
+    Vector3 v3(0.0,0.0,0.0);
+    fprintf(stderr, "line 1-2\n");
+    Position p;
+    fprintf(stderr, "line2\n");
+    poses.push_back(Position(Symbol('x', 0), Vector3(0.0,0.0,0.0), "pose"));
+    fprintf(stderr, "Added first pose\n");
   }
   for (int i = 0; i < num_poses-1; i++){
+    fprintf(stderr, "pose number = %d\n", i);
     //Add a factor between the two poses
     Vector3 odometry(ground_truth_poses[i+1].x()-ground_truth_poses[i].x(), ground_truth_poses[i+1].y()-ground_truth_poses[i].y(), ground_truth_poses[i+1].z()-ground_truth_poses[i].z());
     //Add noise to ground truth odometry to simulate real life noise
@@ -243,19 +310,26 @@ Values OnePass(gtsam::NonlinearFactorGraph graph, int pass_no){
 
     //Factors between landmarks
     for (int landmark_no = 0; landmark_no < landmarks.size(); landmark_no++){
+      fprintf(stderr, "landmark number = %d\n", landmark_no);
       //Returns whether a false positive has been detected on a ground truth or not
       int p = Persistence(landmark_no);
-      if(p==1){ graph = addBearingRangeFactor(i, landmarks.size()-1, graph); }
-      if(p==0){ graph = addBearingRangeFactor(i, landmark_no, graph); }
+      Vector3 estimated_landmark_pos;
+      if(p==1){ estimated_landmark_pos = addBearingRangeFactor(i, landmarks.size()-1, graph); }
+      if(p==0){ estimated_landmark_pos = addBearingRangeFactor(i, landmark_no, graph); }
       if(p==2 or p==3){ continue; }
+      if(estimated_landmark_pos.x()!=20.0){
+        landmarks[landmark_no].position = estimated_landmark_pos;
+      }
     }
   }
-  
+  fprintf(stderr, "Adding the following keys into current estimate\n");
   Values currentEstimate;
   for(gtsam::Symbol key:graph.keys()){
     if(key.chr()=='x') { currentEstimate.insert(Symbol('x',key.index()), poses[key.index()].position);}
-    if(key.chr()=='l') { currentEstimate.insert(Symbol('x',key.index()), landmarks[key.index()].position);}
+    if(key.chr()=='l') { currentEstimate.insert(Symbol('l',key.index()), landmarks[key.index()].position);}
+    key.print();
   }
+  currentEstimate.print("Current estimate:");
   LevenbergMarquardtOptimizer optimizer(graph, currentEstimate);
   Values new_result = optimizer.optimize();
   //Updating current landmark and pose estimates
@@ -275,4 +349,16 @@ Values OnePass(gtsam::NonlinearFactorGraph graph, int pass_no){
   new_result.print();
   return new_result;
 
+}
+
+int main(int argc, char** argv) {
+  AddGroundTruthLandmark(Vector3(3.0,2.0,0.0));
+  AddGroundTruthLandmark(Vector3(1.0,3.0,0.0));
+  AddGroundTruthLandmark(Vector3(4.0,1.0,0.0));
+  NonlinearFactorGraph graph;
+  #if 0
+  Vector3 pos(4.0,1.0,0.0);
+  Position p(Symbol('l',landmarks.size()), pos, "landmark");
+  #endif
+  OnePass(graph, 0);
 }
