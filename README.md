@@ -1,1 +1,1 @@
-# semantic-slam
+# semistatic-slam

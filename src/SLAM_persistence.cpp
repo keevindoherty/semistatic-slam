@@ -74,6 +74,7 @@ static double lambda_u = 1;
 static double lambda_l = .01;
 
 //P_M: Probability of missed detection (object exists, but is not detected)
+
 static double P_M = 0.1;
 //P_F: Probability of false positive (object doesn't exist, but is detected)
 static double P_F = 0.1;
@@ -173,7 +174,6 @@ bool keyInKeyVector(const KeyVector& keys, Key k){
   }
   return false;
 }
-
 void eraseKeys(const KeyVector& keys, gtsam::NonlinearFactorGraph& graph) {
   //Modifies graph by erasing keys and any factors connected to the keys
   auto it = graph.begin();
@@ -269,7 +269,6 @@ void marginalize(const gtsam::Key &key, gtsam::NonlinearFactorGraph& graph, cons
   //Add induced factors to the graph
   addFactors(m, graph);
 }
-
 
 Vector3 index_to_feature(int landmark_no){
   //Returns a feature (vector) given a symbol number
@@ -461,6 +460,7 @@ Values one_pass(Values estimate) {
 }
 
 Values createInitialEstimate(Values initialEstimate){
+
   initialEstimate.insert(Symbol('x',0), Pose2(4.07, 2.49, 0.73));
   initialEstimate.insert(Symbol('x',1), Pose2(1.58, 4.3, 2.72));
   initialEstimate.insert(Symbol('x',2), Pose2(0.44, 3.78, -2.05319));
@@ -472,6 +472,7 @@ Values createInitialEstimate(Values initialEstimate){
   initialEstimate.insert(Symbol('l',0), Point2(3.4, 1.12)); 
   initialEstimate.insert(Symbol('l',1), Point2(3.03, 1.69));
   initialEstimate.insert(Symbol('l',2), Point2(2.09, 1.57));
+
   return initialEstimate;
 }
 
