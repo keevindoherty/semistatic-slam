@@ -16,10 +16,14 @@
 #include <gtsam/nonlinear/LinearContainerFactor.h>
 #include <persistence_filter/c++/include/persistence_filter.h>
 #include <persistence_filter/c++/include/persistence_filter_utils.h>
+#include <matplotlibcpp.h>
+#include <math.h>
 
 /*TODOS:
-- fix false positive RNG position generation (has to be to right of robot)
+- Fix false positive RNG position generation (has to be to right of robot)
 - Jank solution of returning "final without modification"
+- Matplotlib C++
+- 
 */
 
 /*To change the positions or ground_truth_landmarks:
@@ -42,7 +46,7 @@ Results:
 using namespace std;
 using namespace gtsam;
 
-double random_seed = 11.0;
+double random_seed = 12.0;
 bool debug = false;
 
 const int ground_truth_num_landmarks = 3;
@@ -70,9 +74,10 @@ static double lambda_u = 1;
 static double lambda_l = .01;
 
 //P_M: Probability of missed detection (object exists, but is not detected)
-static double P_M = 0.05;
+
+static double P_M = 0.1;
 //P_F: Probability of false positive (object doesn't exist, but is detected)
-static double P_F = 0.05;
+static double P_F = 0.1;
 //time counter for the persistence filter
 double t[max_num_landmarks];
 
@@ -97,6 +102,9 @@ int current_pose_index = 0;
 
 int past_pose_index = 0;
 int past_landmark_number = 0;
+
+double plot_x = {};
+double plot_y = {};
 
 void initializeTimes(){
   for (int i = 0; i < max_num_landmarks; i++){
@@ -166,7 +174,6 @@ bool keyInKeyVector(const KeyVector& keys, Key k){
   }
   return false;
 }
-
 void eraseKeys(const KeyVector& keys, gtsam::NonlinearFactorGraph& graph) {
   //Modifies graph by erasing keys and any factors connected to the keys
   auto it = graph.begin();
@@ -215,6 +222,20 @@ gtsam::KeyVector all_but_one(Key key, const gtsam::GaussianFactorGraph& graph){
   return ret;
 }
 
+Vector3 estimate_from_odom(Vector3 past_pos, Vector3 odometry){
+   return Vector3(past_pos.x()+odometry.x(), past_pos.y()+odometry.y(), past_pos.z()+odometry.z());
+}
+
+// delta y /delta x = tan(bearing), sin/cos = tan(bearing)
+// sin^2+cos^2 = 1, cos^2(1+tan(bearing)^2) = 1, cos = 1/sqrt(1+tan(bearing)^2)
+// sin = tan(bearing)/sqrt(1+tan(bearing)^2)
+// diff = (cos*range, sin*range, 0)
+
+Vector3 estimate_from_range(Vector3 past_pos, double range, double bearing){
+  Vector3 diff(1/sqrt(1 + pow(tan(bearing),2))*range,tan(bearing)/sqrt(1 + pow(tan(bearing),2))*range,0);
+  return Vector3(past_pos.x()+diff.x(), past_pos.y()+diff.y(), past_pos.z()+diff.z());
+}
+
 void marginalize(const gtsam::Key &key, gtsam::NonlinearFactorGraph& graph, const gtsam::Values &linearization_point) {
 
   // Marginalizes specified keys from a nonlinear factor graph by computing the subgraph containing the marginalized keys
@@ -248,7 +269,6 @@ void marginalize(const gtsam::Key &key, gtsam::NonlinearFactorGraph& graph, cons
   //Add induced factors to the graph
   addFactors(m, graph);
 }
-
 
 Vector3 index_to_feature(int landmark_no){
   //Returns a feature (vector) given a symbol number
@@ -433,13 +453,14 @@ Values one_pass(Values estimate) {
     }
   }
   new_result.print("Final: ");
-  n_result.print("Final without modification");
+  //n_result.print("Final without modification");
   passes++;
   return n_result;
 
 }
 
-void createInitialEstimate(Values initialEstimate){
+Values createInitialEstimate(Values initialEstimate){
+
   initialEstimate.insert(Symbol('x',0), Pose2(4.07, 2.49, 0.73));
   initialEstimate.insert(Symbol('x',1), Pose2(1.58, 4.3, 2.72));
   initialEstimate.insert(Symbol('x',2), Pose2(0.44, 3.78, -2.05319));
@@ -451,6 +472,8 @@ void createInitialEstimate(Values initialEstimate){
   initialEstimate.insert(Symbol('l',0), Point2(3.4, 1.12)); 
   initialEstimate.insert(Symbol('l',1), Point2(3.03, 1.69));
   initialEstimate.insert(Symbol('l',2), Point2(2.09, 1.57));
+
+  return initialEstimate;
 }
 
 int main(int argc, char** argv) {
@@ -460,22 +483,16 @@ int main(int argc, char** argv) {
     index_to_feature_map[i] = ground_truth_landmarks[i];
   }
   Values initialEstimate;
-  initialEstimate.insert(Symbol('x',0), Pose2(4.07, 2.49, 0.73));
-  initialEstimate.insert(Symbol('x',1), Pose2(1.58, 4.3, 2.72));
-  initialEstimate.insert(Symbol('x',2), Pose2(0.44, 3.78, -2.05319));
-  initialEstimate.insert(Symbol('x',3), Pose2(2.09, 4.4, 1.65));
-  initialEstimate.insert(Symbol('x',4), Pose2(4.92, 0.42, -1.41319));
-  initialEstimate.insert(Symbol('x',5), Pose2(0.03, 3.27, 2.29));
-  initialEstimate.insert(Symbol('x',6), Pose2(2.09, 4.4, 1.65));
-
-  initialEstimate.insert(Symbol('l',0), Point2(3.4, 1.12)); 
-  initialEstimate.insert(Symbol('l',1), Point2(3.03, 1.69));
-  initialEstimate.insert(Symbol('l',2), Point2(2.09, 1.57));
+  initialEstimate = createInitialEstimate(initialEstimate);
   Values current_result = one_pass(initialEstimate); 
   
-  // changeGroundTruthLandmark(Vector3(4.0,2.0,0.0), 1);
+  changeGroundTruthLandmark(Vector3(4.0,2.0,0.0), 1);
 
   current_result = one_pass(current_result);
-  // marginalize(Symbol('l',1), graph, current_result);
-  // current_result = one_pass(current_result);
+  marginalize(Symbol('l',1), graph, current_result);
+  changeGroundTruthLandmark(Vector3(3.2,1.8,0.0), 0);
+  current_result = one_pass(current_result); 
+  marginalize(Symbol('l',0), graph, current_result);
+  current_result = one_pass(current_result);
+  current_result = one_pass(current_result);
 }

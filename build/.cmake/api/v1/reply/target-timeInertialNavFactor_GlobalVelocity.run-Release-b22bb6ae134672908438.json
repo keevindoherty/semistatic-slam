@@ -1,0 +1,530 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/gtsam/gtsam_unstable/timing/timeInertialNavFactor_GlobalVelocity"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"gtsamAddExesGlob_impl",
+			"gtsamAddTimingGlob",
+			"target_link_libraries",
+			"set_property",
+			"find_package",
+			"boost_find_component",
+			"include",
+			"target_compile_options",
+			"gtsam_apply_build_flags",
+			"target_compile_definitions",
+			"target_compile_features"
+		],
+		"files" : 
+		[
+			"lib/gtsam/cmake/GtsamTesting.cmake",
+			"lib/gtsam/gtsam_unstable/timing/CMakeLists.txt",
+			"lib/gtsam/gtsam_unstable/CMakeLists.txt",
+			"lib/gtsam/gtsam/CMakeLists.txt",
+			"/usr/local/lib/cmake/boost_filesystem-1.78.0/boost_filesystem-config.cmake",
+			"/usr/local/lib/cmake/Boost-1.78.0/BoostConfig.cmake",
+			"lib/gtsam/cmake/FindBoost.cmake",
+			"lib/gtsam/cmake/HandleBoost.cmake",
+			"lib/gtsam/CMakeLists.txt",
+			"lib/gtsam/cmake/HandleMetis.cmake",
+			"lib/gtsam/gtsam/3rdparty/metis/libmetis/CMakeLists.txt",
+			"lib/gtsam/cmake/GtsamBuildTypes.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 286,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 287,
+				"parent" : 2
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 85,
+				"parent" : 5
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 107,
+				"parent" : 7
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 54,
+				"parent" : 9
+			},
+			{
+				"file" : 7,
+				"parent" : 10
+			},
+			{
+				"command" : 5,
+				"file" : 7,
+				"line" : 28,
+				"parent" : 11
+			},
+			{
+				"file" : 6,
+				"parent" : 12
+			},
+			{
+				"command" : 5,
+				"file" : 6,
+				"line" : 446,
+				"parent" : 13
+			},
+			{
+				"file" : 5,
+				"parent" : 14
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 262,
+				"parent" : 15
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 141,
+				"parent" : 16
+			},
+			{
+				"file" : 4,
+				"parent" : 17
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 103,
+				"parent" : 18
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 58,
+				"parent" : 9
+			},
+			{
+				"file" : 9,
+				"parent" : 20
+			},
+			{
+				"command" : 3,
+				"file" : 9,
+				"line" : 47,
+				"parent" : 21
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 10,
+				"line" : 9,
+				"parent" : 23
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 290,
+				"parent" : 2
+			},
+			{
+				"command" : 8,
+				"file" : 11,
+				"line" : 270,
+				"parent" : 25
+			},
+			{
+				"command" : 8,
+				"file" : 11,
+				"line" : 272,
+				"parent" : 25
+			},
+			{
+				"command" : 10,
+				"file" : 11,
+				"line" : 267,
+				"parent" : 25
+			},
+			{
+				"command" : 11,
+				"file" : 11,
+				"line" : 264,
+				"parent" : 25
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 299,
+				"parent" : 2
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6"
+				},
+				{
+					"backtrace" : 26,
+					"fragment" : "-march=native"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wreturn-type"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Werror=return-type"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wformat"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Werror=format-security"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wsuggest-override"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-O3"
+				},
+				{
+					"fragment" : "-std=c++11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_ATOMIC_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_ATOMIC_NO_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_CHRONO_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_CHRONO_NO_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_DATE_TIME_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_DATE_TIME_NO_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_FILESYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_FILESYSTEM_NO_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_REGEX_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_REGEX_NO_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_SERIALIZATION_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_SERIALIZATION_NO_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_SYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_SYSTEM_NO_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_THREAD_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_THREAD_NO_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_TIMER_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_TIMER_NO_LIB"
+				},
+				{
+					"backtrace" : 28,
+					"define" : "NDEBUG"
+				},
+				{
+					"backtrace" : 30,
+					"define" : "TOPSRCDIR=\"/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/build/lib/gtsam"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/CppUnitLite"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam/3rdparty/Eigen"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam/3rdparty/metis/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam/3rdparty/metis/libmetis"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam/3rdparty/metis/GKlib"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam/3rdparty/SuiteSparse_config"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam/3rdparty/Spectra"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/Users/ishitagoluguri/Desktop/MIT/UROP 2022/semantic_slam/lib/gtsam/gtsam/3rdparty/CCOLAMD/Include"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/usr/local/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					29
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "gtsam_unstable::@30d5a75ab41d6da01408"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "metis-gtsam::@9e2cbc8f58ba0c78d25f"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "gtsam::@16ec09aee072aef7aa20"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "timing"
+	},
+	"id" : "timeInertialNavFactor_GlobalVelocity::@ac35b9c05ba3b642113d",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "../libgtsam_unstable.4.2.0.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../gtsam/libgtsam.4.2.0.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/usr/local/lib/libboost_serialization-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/usr/local/lib/libboost_system-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/usr/local/lib/libboost_filesystem-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "/usr/local/lib/libboost_atomic-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/usr/local/lib/libboost_thread-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/usr/local/lib/libboost_date_time-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/usr/local/lib/libboost_regex-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/usr/local/lib/libboost_timer-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/usr/local/lib/libboost_chrono-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "../../gtsam/3rdparty/metis/libmetis/libmetis-gtsam.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "timeInertialNavFactor_GlobalVelocity",
+	"nameOnDisk" : "timeInertialNavFactor_GlobalVelocity",
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam_unstable/timing",
+		"source" : "lib/gtsam/gtsam_unstable/timing"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/gtsam/gtsam_unstable/timing/timeInertialNavFactor_GlobalVelocity.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(SLAM_no_persistence)
+project(semantic_slam)
 
 # new feature to Cmake Version > 2.8.12
 # Mac ONLY. Define Relative Path on Mac OS
@@ -18,11 +18,18 @@ set(SLAM_LIBS
   gtsam
   )
 
-add_executable(SLAM_no_persistence src/SLAM_no_persistence.cpp)
-include_directories(SLAM_no_persistence lib)
+add_executable(semantic_slam
+src/SLAM_no_persistence.cpp 
+src/SLAM_persistence.cpp
+)
+
+include_directories(semantic_slam lib)
+include_directories(semantic_slam 
+/usr/local/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/include/python3.9
+/Users/ishitagoluguri/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include)
 
 target_link_libraries(
-    SLAM_no_persistence
+    semantic_slam
     ${SLAM_LIBS}
 )
    # CMake build options

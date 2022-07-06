@@ -1,0 +1,239 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"gtsamAddTestsGlob_impl",
+			"gtsamAddTestsGlob",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"lib/gtsam/cmake/GtsamTesting.cmake",
+			"lib/gtsam/gtsam/base/tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "testCholesky::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "testDSFMap::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "testDSFVector::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "testDebug::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "testFastContainers::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "testGroup::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "testMatrix::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "testNumericalDerivative::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "testOptionalJacobian::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "testSerializationBase::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "testSymmetricBlockMatrix::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "testTreeTraversal::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "testVector::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "testVerticalBlockMatrix::@fa8e148f40bdb59a532c"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "testWeightedSampler::@fa8e148f40bdb59a532c"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Unit tests"
+	},
+	"id" : "check.base::@fa8e148f40bdb59a532c",
+	"name" : "check.base",
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam/base/tests",
+		"source" : "lib/gtsam/gtsam/base/tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/lib/gtsam/gtsam/base/tests/CMakeFiles/check.base",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/gtsam/gtsam/base/tests/CMakeFiles/check.base.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

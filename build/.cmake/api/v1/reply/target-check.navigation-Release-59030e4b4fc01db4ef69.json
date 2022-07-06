@@ -1,0 +1,249 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"gtsamAddTestsGlob_impl",
+			"gtsamAddTestsGlob",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"lib/gtsam/cmake/GtsamTesting.cmake",
+			"lib/gtsam/gtsam/navigation/tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "testAHRSFactor::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "testAttitudeFactor::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "testBarometricFactor::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "testCombinedImuFactor::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "testConstantVelocityFactor::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "testImuBias::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "testImuFactor::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "testMagPoseFactor::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "testManifoldPreintegration::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "testNavExpressions::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "testNavState::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "testPoseVelocityBias::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "testScenario::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "testScenarioRunner::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "testSerializationNavigation::@756fa13f111cabb19eac"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "testTangentPreintegration::@756fa13f111cabb19eac"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Unit tests"
+	},
+	"id" : "check.navigation::@756fa13f111cabb19eac",
+	"name" : "check.navigation",
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam/navigation/tests",
+		"source" : "lib/gtsam/gtsam/navigation/tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/lib/gtsam/gtsam/navigation/tests/CMakeFiles/check.navigation",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/gtsam/gtsam/navigation/tests/CMakeFiles/check.navigation.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

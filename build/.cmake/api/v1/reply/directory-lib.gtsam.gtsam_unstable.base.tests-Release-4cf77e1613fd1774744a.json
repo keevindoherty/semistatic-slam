@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam_unstable/base/tests",
+		"source" : "lib/gtsam/gtsam_unstable/base/tests"
+	}
+}

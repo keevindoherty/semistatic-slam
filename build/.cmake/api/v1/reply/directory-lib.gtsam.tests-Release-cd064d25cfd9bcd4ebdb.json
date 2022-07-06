@@ -1,0 +1,61 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/gtsam/gtsam/navigation/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/gtsam/navigation",
+			"paths" : 
+			[
+				"lib/gtsam/gtsam/navigation/AHRSFactor.h",
+				"lib/gtsam/gtsam/navigation/AttitudeFactor.h",
+				"lib/gtsam/gtsam/navigation/BarometricFactor.h",
+				"lib/gtsam/gtsam/navigation/CombinedImuFactor.h",
+				"lib/gtsam/gtsam/navigation/ConstantVelocityFactor.h",
+				"lib/gtsam/gtsam/navigation/GPSFactor.h",
+				"lib/gtsam/gtsam/navigation/ImuBias.h",
+				"lib/gtsam/gtsam/navigation/ImuFactor.h",
+				"lib/gtsam/gtsam/navigation/MagFactor.h",
+				"lib/gtsam/gtsam/navigation/MagPoseFactor.h",
+				"lib/gtsam/gtsam/navigation/ManifoldPreintegration.h",
+				"lib/gtsam/gtsam/navigation/NavState.h",
+				"lib/gtsam/gtsam/navigation/PreintegratedRotation.h",
+				"lib/gtsam/gtsam/navigation/PreintegrationBase.h",
+				"lib/gtsam/gtsam/navigation/PreintegrationParams.h",
+				"lib/gtsam/gtsam/navigation/Scenario.h",
+				"lib/gtsam/gtsam/navigation/ScenarioRunner.h",
+				"lib/gtsam/gtsam/navigation/TangentPreintegration.h",
+				"lib/gtsam/gtsam/navigation/expressions.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/gtsam/gtsam/navigation",
+		"source" : "lib/gtsam/gtsam/navigation"
+	}
+}
