@@ -1,2 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libCppUnitLite.a CMakeFiles/CppUnitLite.dir/Test.cpp.o CMakeFiles/CppUnitLite.dir/TestRegistry.cpp.o CMakeFiles/CppUnitLite.dir/TestResult.cpp.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libCppUnitLite.a
