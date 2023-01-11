@@ -6,6 +6,8 @@
 using namespace gtsam;
 using namespace std;
 
+//File good?
+
 //P_M: Probability of missed detection (object exists, but is not detected)
 static double P_M = 0.10;
 //P_F: Probability of false positive (object doesn't exist, but is detected)
@@ -19,7 +21,7 @@ double Distance(Point2 v1, Point2 v2){
 
 bool InLandmarks(Point2 v, vector<Landmark>& landmarks){
   //Returns whether an observed point can reasonably be mapped to an existing landmark or if a new Landmark should be made for it
-  for (Landmark l: landmarks){
+  for (auto l: landmarks){
         if(Distance(l.getPosition(), v)<0.5){
             return true;
         }
@@ -27,9 +29,9 @@ bool InLandmarks(Point2 v, vector<Landmark>& landmarks){
     return false;
 }
 
-vector<Observation> GenerateObservations(plots& plots, int pose_no, vector<RobotPose>& poses, vector<Landmark>& landmarks, vector<Observation> &observations){
+vector<Observation> GenerateObservations(plots& plots, int pose_no, vector<RobotPose>& poses, vector<Landmark>& landmarks, vector<Observation> &observations, vector<Landmark>& ground_truth_landmarks, bool persistence){
   vector<Observation> new_observations;
-  for(Landmark landmark: ground_truth_landmarks){
+  for(auto& landmark: ground_truth_landmarks){
     double random = distribution(generator)*20.0;
     bool false_positive = false;
     bool false_negative = false;
@@ -51,7 +53,12 @@ vector<Observation> GenerateObservations(plots& plots, int pose_no, vector<Robot
       landmark.print();
       fprintf(stderr, "False positive. location: (%f, %f)\n", pos.x(), pos.y());
       if(!InLandmarks(pos, landmarks)){
-        landmarks.push_back(Landmark(Symbol('l',landmarks.size()), pos, Book));
+        if(persistence){
+          landmarks.push_back(LandmarkPersistence(Symbol('l',landmarks.size()), pos, Book));
+        }
+        else{
+          landmarks.push_back(LandmarkNoPersistence(Symbol('l',landmarks.size()), pos, Book));
+        }
       }
       relOdom = RelativeOdometry(poses.at(pose_no).getPosition(), Point3(pos.x(), pos.y(), 0.0));
     }

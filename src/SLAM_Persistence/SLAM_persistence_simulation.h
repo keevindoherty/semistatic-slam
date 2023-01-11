@@ -26,20 +26,20 @@ using namespace std;
 using namespace gtsam;
 using namespace matplotlibcpp;
 
-void AddGroundTruthLandmark(const Point2& pos, const SemanticType& sem){
-    Landmark p(Symbol('l',landmarks.size()), pos, sem);
+void AddGroundTruthLandmarkPersistence(const Point2& pos, const SemanticType& sem){
+    LandmarkPersistence p(Symbol('l',landmarks_persistence.size()), pos, sem);
     p.inGroundTruth();
-    landmarks.push_back(p);
-    ground_truth_landmarks.push_back(p);
+    landmarks_persistence.push_back(p);
+    ground_truth_landmarks_persistence.push_back(p);
 }
 
-void MoveGroundTruthLandmark(const Point2& new_pos, int landmark_no){
-    Landmark p(Symbol('l',landmarks.size()), new_pos, ground_truth_landmarks[landmark_no].getSemanticType());
-    ground_truth_landmarks[landmark_no] = p;
-    landmarks.push_back(p);
+void MoveGroundTruthLandmarkPersistence(const Point2& new_pos, int landmark_no){
+    LandmarkPersistence p(Symbol('l',landmarks_persistence.size()), new_pos, ground_truth_landmarks_persistence[landmark_no].getSemanticType());
+    ground_truth_landmarks_persistence[landmark_no] = p;
+    landmarks_persistence.push_back(p);
 }
 
-Values OnePass(gtsam::NonlinearFactorGraph& graph, plots& pl, vector<Landmark>& landmarks, vector<RobotPose>& poses, vector<Observation>& observations, int pass_no){
+Values OnePassPersistence(gtsam::NonlinearFactorGraph& graph, plots& pl, vector<Landmark>& landmarks, vector<RobotPose>& poses, vector<Observation>& observations, int pass_no){
     ofstream outdata;
     graph.addPrior(Symbol('x',poses.size()), Pose2(0,0,0), priorNoise);  // add directly to graph
     RobotPose p(Symbol('x', poses.size()), Pose2(0.0,0.0,0.0));
@@ -67,7 +67,7 @@ Values OnePass(gtsam::NonlinearFactorGraph& graph, plots& pl, vector<Landmark>& 
     pl.y_landmark_plot.push_back(v4);
     graph.emplace_shared<BetweenFactor<Pose2> >(Symbol('x',s-1), Symbol('x',s), noisy_odometry, odometryNoise);
 
-    vector<Observation> new_observations = GenerateObservations(pl, pose_no, poses, landmarks, observations);
+    vector<Observation> new_observations = GenerateObservations(pl, pose_no, poses, landmarks, observations, ground_truth_landmarks_persistence, true);
     LandmarkAssociation(poses.at(s).getPosition(), landmarks, new_observations);
     UpdateLandmarkPredictions(landmarks, new_observations);
     UpdateGraphFactors(pose_no, poses, landmarks, graph, new_observations, pl);
@@ -105,12 +105,5 @@ Values OnePass(gtsam::NonlinearFactorGraph& graph, plots& pl, vector<Landmark>& 
     }
   }
   outdata.close();
-
-  // new_result.print("After erasing");
-  for (Landmark landmark: landmarks){
-    //landmark.print();
-    // fprintf(stderr, "Time: %f\n", landmark.t);
-    // fprintf(stderr, "Probability: %f. ", landmark.filter.predict(landmark.t));
-  }
   return new_result;
 }

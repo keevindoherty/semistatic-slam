@@ -11,6 +11,8 @@
 using namespace gtsam;
 using namespace std;
 
+//File good?
+
 enum SemanticType{
   Book, 
   Chair,
@@ -101,9 +103,7 @@ class Landmark{
       semanticType = s;
     }
 
-    double getPersistence(){
-      return filter.predict(t);
-    }
+    virtual double getPersistence()=0;
 
   private:
     gtsam::Point2 current_position;
@@ -111,6 +111,23 @@ class Landmark{
     gtsam::Symbol symbol;
     SemanticType semanticType;
 };
+
+class LandmarkPersistence : public Landmark{
+  public:
+    LandmarkPersistence(const gtsam::Symbol& s, const gtsam::Point2& pos, const SemanticType& sem):Landmark(s, pos, sem){}; 
+    double getPersistence(){
+      return filter.predict(t);
+    }
+};
+
+class LandmarkNoPersistence : public Landmark{
+    public:
+    LandmarkNoPersistence(const gtsam::Symbol& s, const gtsam::Point2& pos, const SemanticType& sem):Landmark(s, pos, sem){}; 
+    double getPersistence(){
+      return 0;
+    }
+};
+
 
 class Observation{
   public:
@@ -164,10 +181,12 @@ struct plots{
 int num_poses = 21;
 int num_ground_truth_landmarks = 0;
 //Ground truth landmarks
-vector<Landmark> ground_truth_landmarks;
+vector<LandmarkPersistence> ground_truth_landmarks_persistence;
+vector<LandmarkNoPersistence> ground_truth_landmarks_no_persistence;
 //Given in x-y-z coordinates
 vector <Vector3> ground_truth_poses = {Vector3(0.0,0.0,0.0), Vector3(1.0,1.0,0.0), Vector3(2.0,2.0,0.0), Vector3(3.0,3.0,0.0), Vector3(4.0,4.0,0.0), Vector3(5.0,5.0,0.0), Vector3(6.0,6.0,0.0), Vector3(7.0,7.0,0.0), Vector3(8.0,8.0,0.0), Vector3(9.0,9.0,0.0), Vector3(10.0,10.0,0.0), Vector3(11.0,11.0,0.0), Vector3(12.0,12.0,0.0), Vector3(13.0,13.0,0.0), Vector3(14.0,14.0,0.0), Vector3(15.0,15.0,0.0), Vector3(16.0,16.0,0.0), Vector3(17.0,17.0,0.0), Vector3(18.0,18.0,0.0), Vector3(19.0,19.0,0.0), Vector3(20.0,20.0,0.0)};
-vector<Landmark> landmarks;
+vector<LandmarkPersistence> landmarks_persistence;
+vector<LandmarkNoPersistence> landmarks_no_persistence;
 vector<RobotPose> poses;
 vector<Observation> observations;
 

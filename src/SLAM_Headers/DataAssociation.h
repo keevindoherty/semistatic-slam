@@ -13,7 +13,7 @@ double costFactorType = 1.0;
 double costFactorPersistence = 5.0;
 //Delete from landmarks database if too close to each other and same semantic type
 
-double Cost(Pose2 pos, Landmark existing, Observation observed){
+double Cost(Pose2 pos, Landmark& existing, Observation observed){
   //Changing data types to Pose2 and Vector3 to pass into Odometry() function
   Pose2 transform1 = RelativeOdometry(pos, Vector3(existing.getPosition().x(), existing.getPosition().y(), 0.0));
   Pose2 transform2 = RelativeOdometry(pos, Vector3(observed.getPosition().x(), observed.getPosition().y(), 0.0));
@@ -26,7 +26,7 @@ double Cost(Pose2 pos, Landmark existing, Observation observed){
 
 vector<vector<double>> ConstructCostMatrix(Pose2 pos, vector<Landmark>& landmarks, vector<Observation>& new_observations){
   vector <vector<double>> costMatrix;
-  for (Landmark landmark: landmarks){
+  for (auto landmark: landmarks){
     vector<double> v;
     costMatrix.push_back(v);
     for (int i = 0; i < new_observations.size(); i++){
