@@ -28,19 +28,21 @@ using namespace gtsam;
 using namespace matplotlibcpp;
 
 void AddGroundTruthLandmarkNoPersistence(const Point2& pos, const SemanticType& sem){
-    LandmarkNoPersistence p(Symbol('l',landmarks_persistence.size()), pos, sem);
-    p.inGroundTruth();
-    landmarks_no_persistence.push_back(p);
-    ground_truth_landmarks_no_persistence.push_back(p);
+    LandmarkNoPersistence* p = new LandmarkNoPersistence(Symbol('l',landmarks_persistence.size()), pos, sem);
+    // LandmarkPersistence* p = &l;
+    p->inGroundTruth();
+    landmarks_persistence.push_back(p);
+    ground_truth_landmarks_persistence.push_back(p);
 }
 
 void MoveGroundTruthLandmarkNoPersistence(const Point2& new_pos, int landmark_no){
-    LandmarkNoPersistence p(Symbol('l',landmarks_persistence.size()), new_pos, ground_truth_landmarks_persistence[landmark_no].getSemanticType());
+    LandmarkNoPersistence* p = new LandmarkNoPersistence(Symbol('l',landmarks_no_persistence.size()), new_pos, ground_truth_landmarks_no_persistence[landmark_no]->getSemanticType());
+    // LandmarkPersistence* p = &l;
     ground_truth_landmarks_no_persistence[landmark_no] = p;
     landmarks_no_persistence.push_back(p);
 }
 
-Values OnePassNoPersistence(gtsam::NonlinearFactorGraph& graph, plots& pl, vector<Landmark>& landmarks, vector<RobotPose>& poses, vector<Observation>& observations, int pass_no){
+Values OnePassNoPersistence(gtsam::NonlinearFactorGraph& graph, plots& pl, vector<Landmark*> landmarks, vector<RobotPose>& poses, vector<Observation>& observations, int pass_no){
     ofstream outdata;
     graph.addPrior(Symbol('x',poses.size()), Pose2(0,0,0), priorNoise);  // add directly to graph
     RobotPose p(Symbol('x', poses.size()), Pose2(0.0,0.0,0.0));
@@ -79,7 +81,7 @@ Values OnePassNoPersistence(gtsam::NonlinearFactorGraph& graph, plots& pl, vecto
   Values currentEstimate;
   for(gtsam::Symbol key:graph.keys()){
     if(key.chr()=='x') { currentEstimate.insert(Symbol('x',key.index()), poses.at(key.index()).getPosition()); }
-    if(key.chr()=='l') { currentEstimate.insert(Symbol('l',key.index()), landmarks.at(key.index()).getPosition());}
+    if(key.chr()=='l') { currentEstimate.insert(Symbol('l',key.index()), landmarks.at(key.index())->getPosition());}
   }
   //currentEstimate.("Current estimate:");
   //graph.print("Graph:");
@@ -95,7 +97,7 @@ Values OnePassNoPersistence(gtsam::NonlinearFactorGraph& graph, plots& pl, vecto
       outdata << diff << endl;
     }
     if(key.chr()=='l') {
-        landmarks[key.index()].setPosition(new_result.at<Point2>(key));
+        landmarks[key.index()]->setPosition(new_result.at<Point2>(key));
     }
   }
   outdata.close();

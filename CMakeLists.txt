@@ -22,6 +22,7 @@ set(SLAM_LIBS
   matplotlibcpp
   hungarian
   )
+add_compile_options(-g -rdynamic)
   
 
 add_executable(semantic_slam
@@ -31,7 +32,7 @@ src/SLAM_Headers/DataAssociation.h
 src/SLAM_Headers/Marginalize.h
 src/SLAM_Headers/LandmarkPoses.h
 src/SLAM_Headers/LandmarkUpdates.h
-src/SLAM_Headers/LandmarkPosesExperiment.h
+# src/SLAM_Headers/LandmarkPosesExperiment.h
 src/SLAM_Headers/Plotting.h
 src/SLAM_Headers/Odometry.h
 src/SLAM_Headers/Random.h

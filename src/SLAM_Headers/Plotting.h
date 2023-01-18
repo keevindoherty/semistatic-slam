@@ -5,7 +5,7 @@ using namespace std;
 
 int red_overlay = 2;
 
-void MakePlot(plots& pl, const int& pass_no, vector<Landmark>& landmarks){
+void MakePlot(plots& pl, const int& pass_no, vector<Landmark*> landmarks){
   //int reduction = (pass_no+1) * 2;
   if(pass_no == 0){
     red_overlay = pl.x_landmark_plot.size()-2;
@@ -24,8 +24,8 @@ void MakePlot(plots& pl, const int& pass_no, vector<Landmark>& landmarks){
       matplotlibcpp::plot(v5, v6, "ro-", {{"linewidth", "0.5"}});
     }
   for (auto landmark: landmarks){
-      vector<double> v5 = {landmark.getPosition().x()};
-      vector<double> v6 = {landmark.getPosition().y()};
+      vector<double> v5 = {landmark->getPosition().x()};
+      vector<double> v6 = {landmark->getPosition().y()};
       matplotlibcpp::plot(v5, v6, "mo");
   }
   matplotlibcpp::plot(pl.x_pose_plot, pl.y_pose_plot,"bo");

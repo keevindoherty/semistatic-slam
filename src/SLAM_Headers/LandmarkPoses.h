@@ -31,7 +31,7 @@ class RobotPose{
        position = pos;
     }
     void print(){
-      fprintf(stderr, "Robot Pose. Symbol: Symbol('l',%d), position: (%f, %f)\n", symbol.index(), position.x(), position.y());
+      fprintf(stderr, "Robot Pose. Symbol: Symbol('l',%llu), position: (%f, %f)\n", symbol.index(), position.x(), position.y());
     }
     Pose2 getPosition(){
       return position;
@@ -58,7 +58,7 @@ class Landmark{
     double t;
 
     Landmark(const gtsam::Symbol& s, const gtsam::Point2& pos, const SemanticType& sem) {
-      symbol = s;
+      this->symbol = s;
       current_position = pos;
       semanticType = sem;
       t = 1.0;
@@ -75,14 +75,18 @@ class Landmark{
           lambda_l = 0.01;
           lambda_u = 0.04;
           break;
+        case Bed:
+          lambda_l = 0.01;
+          lambda_u = 0.04;
+          break;
       }
-      filter = PersistenceFilter{std::bind(log_general_purpose_survival_function, std::placeholders::_1, Landmark::lambda_l, Landmark::lambda_u)};
+      this->filter = PersistenceFilter{std::bind(log_general_purpose_survival_function, std::placeholders::_1, Landmark::lambda_l, Landmark::lambda_u)};
     };
     void incrementTime(){
       t++;
     }
     void print(){
-      fprintf(stderr, "Landmark. Symbol: Symbol('l',%d), position: (%f, %f), time: %f\n", symbol.index(), current_position.x(), current_position.y(), t);
+      fprintf(stderr, "Landmark. Symbol: Symbol('l',%llu), position: (%f, %f), time: %f\n", symbol.index(), current_position.x(), current_position.y(), t);
     }
     Point2 getPosition(){
       return current_position;
@@ -115,7 +119,7 @@ class Landmark{
 class LandmarkPersistence : public Landmark{
   public:
     LandmarkPersistence(const gtsam::Symbol& s, const gtsam::Point2& pos, const SemanticType& sem):Landmark(s, pos, sem){}; 
-    double getPersistence(){
+    double getPersistence() override{
       return filter.predict(t);
     }
 };
@@ -123,7 +127,7 @@ class LandmarkPersistence : public Landmark{
 class LandmarkNoPersistence : public Landmark{
     public:
     LandmarkNoPersistence(const gtsam::Symbol& s, const gtsam::Point2& pos, const SemanticType& sem):Landmark(s, pos, sem){}; 
-    double getPersistence(){
+    double getPersistence() override{
       return 0;
     }
 };
@@ -181,12 +185,12 @@ struct plots{
 int num_poses = 21;
 int num_ground_truth_landmarks = 0;
 //Ground truth landmarks
-vector<LandmarkPersistence> ground_truth_landmarks_persistence;
-vector<LandmarkNoPersistence> ground_truth_landmarks_no_persistence;
+vector<Landmark*> ground_truth_landmarks_persistence;
+vector<Landmark*> ground_truth_landmarks_no_persistence;
 //Given in x-y-z coordinates
-vector <Vector3> ground_truth_poses = {Vector3(0.0,0.0,0.0), Vector3(1.0,1.0,0.0), Vector3(2.0,2.0,0.0), Vector3(3.0,3.0,0.0), Vector3(4.0,4.0,0.0), Vector3(5.0,5.0,0.0), Vector3(6.0,6.0,0.0), Vector3(7.0,7.0,0.0), Vector3(8.0,8.0,0.0), Vector3(9.0,9.0,0.0), Vector3(10.0,10.0,0.0), Vector3(11.0,11.0,0.0), Vector3(12.0,12.0,0.0), Vector3(13.0,13.0,0.0), Vector3(14.0,14.0,0.0), Vector3(15.0,15.0,0.0), Vector3(16.0,16.0,0.0), Vector3(17.0,17.0,0.0), Vector3(18.0,18.0,0.0), Vector3(19.0,19.0,0.0), Vector3(20.0,20.0,0.0)};
-vector<LandmarkPersistence> landmarks_persistence;
-vector<LandmarkNoPersistence> landmarks_no_persistence;
+vector <Vector3> ground_truth_poses = {Vector3(0.0,0.0,0.0), Vector3(1.0,1.0,0.0), Vector3(2.0,2.0,0.0), Vector3(3.0,3.0,0.0), Vector3(4.0,4.0,0.0), Vector3(5.0,5.0,0.0), Vector3(6.0,6.0,0.0), Vector3(7.0,7.0,0.0),Vector3(8.0,8.0,0.0), Vector3(9.0,9.0,0.0),Vector3(10.0,10.0,0.0), Vector3(11.0,11.0,0.0), Vector3(12.0,12.0,0.0), Vector3(13.0,13.0,0.0), Vector3(14.0,14.0,0.0), Vector3(15.0,15.0,0.0), Vector3(16.0,16.0,0.0), Vector3(17.0,17.0,0.0),Vector3(18.0,18.0,0.0), Vector3(19.0,19.0,0.0), Vector3(20.0,20.0,0.0)};
+vector<Landmark*> landmarks_persistence;
+vector<Landmark*> landmarks_no_persistence;
 vector<RobotPose> poses;
 vector<Observation> observations;
 
