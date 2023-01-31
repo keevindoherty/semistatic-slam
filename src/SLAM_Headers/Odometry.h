@@ -44,6 +44,17 @@ Pose2 odometry(x, y, theta);
 return odometry;
 }
 
+Pose2 RelativeOdometryData(Pose2 p1, Pose2 v2){
+//Gives the robots odometry given its starting position and ending coordinates
+double orig_angle = atan2((v2.y()-p1.y()),(v2.x()-p1.x()));
+double r = sqrt(pow(v2.x()-p1.x(),2)+pow(v2.y()-p1.y(),2));
+double x = r*cos(orig_angle-p1.theta());
+double y = r*sin(orig_angle-p1.theta());
+Pose2 odometry(x, y, v2.theta());
+return odometry;
+}
+
+
 Pose2 PoseEstimate(Pose2 past_pos, Pose2 odometry){
   // Return current position estimate given a past position and the relative odometry from the past position (Pose 2)
   double r = sqrt(pow(odometry.x(),2)+pow(odometry.y(),2));
@@ -63,6 +74,23 @@ Point2 LandmarkEstimate(Pose2 past_pos, double range, double bearing){
 
 double Distance(Point3 p1, Pose2 p2){
   return sqrt(pow(p1.x()-p2.x(),2)+pow(p1.y()-p2.y(),2));
+}
+
+vector<double> QuatToEuler(double x, double y, double z, double w){
+  double t0 = 2.0 * (w * x + y * z);
+  double t1 = 1.0 - 2.0 * (x * x + y * y);
+  double roll_x = atan2(t0, t1);
+
+  double t2 = 2.0*(w*y-z*x);
+  t2 = t2>1.0 ? 1: t2;
+  t2 = t2<-1.0 ? -1: t2;
+  double pitch_y = asin(t2);
+
+  double t3 = 2.0*(w*z+x*y);
+  double t4 = 1.0-2.0*(y*y+z*z);
+  double yaw_z = atan2(t3, t4);
+
+  return {roll_x, pitch_y, yaw_z};
 }
 
 

@@ -26,19 +26,46 @@ void handler(int sig) {
 }
 
 int main(int argc, char** argv) {
-  signal(SIGSEGV, handler);   // install our handler
-  AddGroundTruthLandmarkNoPersistence(Point2(3.0,3.0), Table);
-  AddGroundTruthLandmarkNoPersistence(Point2(6.0,3.0), Table);
-  AddGroundTruthLandmarkNoPersistence(Point2(7.0,4.0), Table);
-  AddGroundTruthLandmarkNoPersistence(Point2(3.5,5.5), Table);
-  AddGroundTruthLandmarkNoPersistence(Point2(10.0,2.0), Table);
-  AddGroundTruthLandmarkNoPersistence(Point2(4.0,11.0), Table);
-  AddGroundTruthLandmarkNoPersistence(Point2(13.0,12.0), Table);
-  AddGroundTruthLandmarkNoPersistence(Point2(2.5,15.5), Table);
+  //signal(SIGSEGV, handler);   // install our handler
+  fprintf(stderr, "Hi");
+  AddGroundTruthLandmarkPersistence(Point2(3.0,3.0), Table);
+  AddGroundTruthLandmarkPersistence(Point2(6.0,3.0), Table);
+  AddGroundTruthLandmarkPersistence(Point2(7.0,4.0), Table);
+  AddGroundTruthLandmarkPersistence(Point2(3.5,5.5), Table);
+  AddGroundTruthLandmarkPersistence(Point2(10.0,2.0), Table);
+  AddGroundTruthLandmarkPersistence(Point2(4.0,11.0), Table);
+  AddGroundTruthLandmarkPersistence(Point2(13.0,12.0), Table);
+  AddGroundTruthLandmarkPersistence(Point2(2.5,15.5), Table);
   NonlinearFactorGraph graph;
   plots p;
-  OnePassNoPersistence(graph, p, landmarks_persistence, poses, observations, 0).print();
-  OnePassNoPersistence(graph, p, landmarks_persistence, poses, observations, 1).print();
-  // OnePassPersistence(graph, p, landmarks_persistence, poses, observations, 2);
-  // OnePassPersistence(graph, p, landmarks_persistence, poses, observations, 3).print();
+  OnePassPersistence(graph, p, landmarks_persistence, poses, observations, 0).print();
+  OnePassPersistence(graph, p, landmarks_persistence, poses, observations, 1).print();
+  OnePassPersistence(graph, p, landmarks_persistence, poses, observations, 2).print();
+  OnePassPersistence(graph, p, landmarks_persistence, poses, observations, 3).print();
 }
+
+/*
+TODOS:
+- Fix QuatToEuler
+*/
+
+// #include "opencv2/opencv.hpp"
+// #include <stdio.h>
+// using namespace cv;
+// int main(int argc, char** argv)
+// {
+//     if (argc != 2) {
+//         printf("usage: DisplayImage.out <Image_Path>\n");
+//         return -1;
+//     }
+//     Mat image;
+//     image = imread(argv[1], 1);
+//     if (!image.data) {
+//         printf("No image data \n");
+//         return -1;
+//     }
+//     namedWindow("Display Image", WINDOW_AUTOSIZE);
+//     imshow("Display Image", image);
+//     waitKey(0);
+//     return 0;
+// }

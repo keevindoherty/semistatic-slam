@@ -7,20 +7,26 @@ if(NOT DEFINED CMAKE_MACOSX_RPATH)
   set(CMAKE_MACOSX_RPATH 0)
 endif()
 
+set(OpenCV_DIR lib/opencv)
+
 add_subdirectory(lib/gtsam)
 add_subdirectory(lib/persistence_filter)
 add_subdirectory(lib/hungarian-algorithm-cpp)
+# add_subdirectory(lib/opencv)
+include_directories(lib/opencv/include)
 
 find_package(GTSAM 4.1 REQUIRED)
 #find_package(PersistenceFilter REQUIRED)
 find_package(matplotlibcpp REQUIRED)
 find_package(hungarian REQUIRED)
+find_package(OpenCV REQUIRED)
 
 set(SLAM_LIBS
   persistence_filter
   gtsam
   matplotlibcpp
   hungarian
+  # opencv
   )
 add_compile_options(-g -rdynamic)
   
@@ -48,6 +54,7 @@ include_directories(semantic_slam
 target_link_libraries(
     semantic_slam
     ${SLAM_LIBS}
+    ${OpenCV_LIBS}
 )
    # CMake build options
 # Libraries:          # Boost          # ccache

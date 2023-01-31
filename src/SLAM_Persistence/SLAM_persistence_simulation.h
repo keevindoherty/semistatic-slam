@@ -84,7 +84,7 @@ Values OnePassPersistence(gtsam::NonlinearFactorGraph& graph, plots& pl, vector<
     UpdatePersistence(pose_no, landmarks, poses, new_observations);
     //std::cout << "4" << std::endl;
 
-    //MakePlot(pl, pass_no, landmarks);
+    MakePlot(pl, pass_no, landmarks);
     //fprintf(stderr, "Vector 2, poses size: %d\n", s);
   }
   Values currentEstimate;
