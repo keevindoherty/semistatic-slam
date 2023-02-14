@@ -21,7 +21,7 @@ main ()
 
   // Fill in the cloud data
   pcl::PCDReader reader;
-  reader.read ("../../data/0000.pcd", *cloud_blob);
+  reader.read ("../data/0000.pcd", *cloud_blob);
 
   std::cerr << "PointCloud before filtering: " << cloud_blob->width * cloud_blob->height << " data points." << std::endl;
 
